@@ -8,16 +8,31 @@
   <title></title>
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vendor/animate.css/animate.css" rel="stylesheet">
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">        
+  <link href="vendor/bootstrap/css/bootstrap-grid.min.css.map" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap-reboot.min.css.map" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">        
+  <link href="vendor/bootstrap/css/bootstrap.min.css.map" rel="stylesheet">
+  <link href="vendor/boxicons/css/animations.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/transformations.css" rel="stylesheet"> 
+  <link href="vendor/boxicons/fonts/boxicons.eot" rel="stylesheet">
+  <link href="vendor/boxicons/fonts/boxicons.svg" rel="stylesheet">
+  <link href="vendor/boxicons/fonts/boxicons.ttf" rel="stylesheet">
+  <link href="vendor/boxicons/fonts/boxicons.woff" rel="stylesheet">     
+  <link href="vendor/boxicons/fonts/boxicons.woff2" rel="stylesheet">     
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
   <!-- Template Main CSS File -->
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -49,7 +64,7 @@
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
         <div class="carousel-inner" role="listbox">
     
-          <div class="carousel-item active" style="background: url(assets/image411/home.jpg);">
+          <div class="carousel-item active" style="background: url(img/home.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Welcome To Our Website</h2>
@@ -58,7 +73,7 @@
             </div>
           </div>
    
-          <div class="carousel-item" style="background: url(assets/image411/place1.jpg);">
+          <div class="carousel-item" style="background: url(img/place1.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Location</h2>
@@ -70,11 +85,11 @@
             </div>
           </div>
      
-          <div class="carousel-item" style="background: url(assets/image411/research.jpg);">
+          <div class="carousel-item" style="background: url(img/research.jpg);">
             <div class="carousel-container">
               <div id="research" class="carousel-content">
                 <h2 class="animated fadeInDown">The best research of the year!</h2>
-                <p class="animated fadeInUp">งานวิจัยเกี่ยวกับสัญญาพาณิชย์อิเล็กทรอนิกส์ และการคุ้มครองผู้บริโภคในการทำสัญญาพาณิชย์อิเล็กทรอนิกส์ โดยศูนย์กฎหมายเทคโนโลยีสารสนเทศและการสื่อสาร<br><img src="assets/image411/research1.jpg" alt="research1" width= 20% height= 20%>&nbsp<img src="assets/image411/research2.jpg" alt="research2" width= 20% height= 20%></p>
+                <p class="animated fadeInUp">งานวิจัยเกี่ยวกับสัญญาพาณิชย์อิเล็กทรอนิกส์ และการคุ้มครองผู้บริโภคในการทำสัญญาพาณิชย์อิเล็กทรอนิกส์ โดยศูนย์กฎหมายเทคโนโลยีสารสนเทศและการสื่อสาร<br><img src="img/research1.jpg" alt="research1" width= 20% height= 20%>&nbsp<img src="img/research2.jpg" alt="research2" width= 20% height= 20%></p>
                 <div>
                   <a href="#menu" class="btn-menu animated fadeIn scrollto">More details</a>
                   <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Other research</a>
@@ -83,7 +98,7 @@
             </div>
           </div>
 
-          <div class="carousel-item" style="background: url(assets/image411/register.jpg);">
+          <div class="carousel-item" style="background: url(img/register.jpg);">
             <div class="carousel-container">
               <div id="research" class="carousel-content">
                 <h2 class="animated fadeInDown">Register Now!</h2>
@@ -114,7 +129,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-5 align-items-stretch video-box">
-            <img src="assets/image411/program.jpg" alt="seminar program" width= 90% height= 90%>
+            <img src="img/program.jpg" alt="seminar program" width= 90% height= 90%>
           </div>
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
             <div class="content">
@@ -169,7 +184,7 @@
                     <p>การวิจัยครั้งนี้มีวัตถุประสงค์ 1) เพื่อศึกษาสภาพปัจจุบันของการบริหารจัดการระบบสารสนเทศเพื่อสนับสนุนองค์การแห่งการเรียนรู้ กรณีศึกษาองค์การที่มีวิธีปฏิบัติที่เป็นเลิศ (Best Practices) ตามเกณฑ์รางวัลคุณภาพแห่งชาติ 2) เพื่อพัฒนารูปแบบบริหารจัดการระบบสารสนเทศ เพื่อสนับสนุนองค์การแห่งการเรียนรู้ การศึกษาใช้แนวทางการวิจัยเชิงคุณภาพ วิธีการวิจัยใช้การ วิเคราะห์เอกสาร และการสัมภาษณ์เชิงลึก </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/image411/research3.jpg" alt="" class="img-fluid">
+                    <img src="img/research3.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -189,7 +204,7 @@
                       สัมพันธ์ด้วยค่าสัมประสิทธิ์สหสัมพันธ์แบบเพียร์สัน (Pearson’s Correlation Coefficient) </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/image411/research-demo2.jpg" alt="" class="img-fluid">
+                    <img src="img/research-demo2.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -201,7 +216,7 @@
                     <p>การวิจัยครั้งนี้มีวัตถุประสงค์ เพื่อศึกษาพฤติกรรมการบริโภคก๋วยเตี๋ยวเรือรังสิต ศึกษาปัจจัยด้านประชากรศาสตร์ ศึกษาปัจจัยส่วนประสมทางการตลาด ศึกษาความสัมพันธ์ระหว่างปัจจัยด้านประชากรศาสตร์กับพฤติกรรมการบริโภคก๋วยเตี๋ยวเรือรังสิต และศึกษาความสัมพันธ์ระหว่างปัจจัยส่วนประสมทางการตลาดกับพฤติกรรมการบริโภคก๋วยเตี๋ยวเรือรังสิต กลุ่มตัวอย่างที่ใช้ในการวิจัยครั้งนี้ คือ ผู้บริโภคที่มาใช้บริการร้านก๋วยเตี๋ยวเรือรังสิต บริเวณริมคลองรังสิตประยูรศักดิ์ระหว่างคลอง 1 ถึงคลอง 16 จำนวน 400 คน โดยใช้แบบสอบถามในการเก็บรวบรวมข้อมูล สถิติที่ใช้ในการวิเคราะห์ข้อมูลคือ การแจกแจงความถี่ ค่าร้อยละ ค่าเฉลี่ย ส่วนเบี่ยงเบนมาตรฐาน ส่วนสถิติที่ใช้ทดสอบสมมุติฐานคือ การวิเคราะห์ความแตกต่างด้วยการทดสอบค่าที การวิเคราะห์ความแปรปรวนทางเดียว การวิเคราะห์ความสัมพันธ์โดยใช้สถิติสหสัมพันธ์อย่างง่ายของเพียร์สัน และสถิติไค – สแควร์ ด้วยโปรแกรมสำเร็จรูปทางสถิติ</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/image411/research-demo3.jpg" alt="" class="img-fluid">
+                    <img src="img/research-demo3.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -221,48 +236,48 @@
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/image411/seminar1.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/image411/seminar1.jpg" alt="" class="img-fluid">
+              <a href="img/seminar1.jpg" class="venobox" data-gall="gallery-item">
+                <img src="img/seminar1.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
             
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/image411/seminar2.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/image411/seminar2.jpg" alt="" class="img-fluid">
+              <a href="img/seminar2.jpg" class="venobox" data-gall="gallery-item">
+                <img src="img/seminar2.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
             
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/image411/seminar3.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/image411/seminar3.jpg" alt="" class="img-fluid">
+              <a href="img/seminar3.jpg" class="venobox" data-gall="gallery-item">
+                <img src="img/seminar3.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
             
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/image411/seminar4.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/image411/seminar4.jpg" alt="" class="img-fluid">
+              <a href="img/seminar4.jpg" class="venobox" data-gall="gallery-item">
+                <img src="img/seminar4.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
             
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/image411/seminar5.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/image411/seminar5.jpg" alt="" class="img-fluid">
+              <a href="img/seminar5.jpg" class="venobox" data-gall="gallery-item">
+                <img src="img/seminar5.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
             
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/image411/seminar6.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/image411/seminar6.jpg" alt="" class="img-fluid">
+              <a href="img/seminar6.jpg" class="venobox" data-gall="gallery-item">
+                <img src="img/seminar6.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -289,17 +304,17 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/venobox/venobox.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
