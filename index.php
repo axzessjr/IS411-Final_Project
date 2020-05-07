@@ -7,4 +7,17 @@ if (!isset($_SESSION['email'])) {
 }
 
 echo "Eha";
+
+
+
 ?>
+
+
+<html>
+
+<p>Welcome!</p>
+
+<?php echo $_SESSION['email']; ?>
+
+
+</html>
