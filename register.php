@@ -18,14 +18,22 @@
         <?php if (isset($_SESSION['error'])) : ?>
                 <h3>
                     <?php 
-                        foreach($_SESSION['error'] as $error){ ?>
-                        <div class="alert alert-danger alert-dismissible fade show">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <strong>
-                           <? echo $error . "<br>";?>
-                        </strong>
-                        </div>
-                        <?
+                        foreach($_SESSION['error'] as $error){ 
+                            
+                            echo "
+                            
+                            <div class='alert alert-danger alert-dismissible fade show'>
+                        
+                            <button type='button' class='close' data-dismiss='alert'>&times;</button> ";
+                        
+                            echo "<strong>";
+                            
+                            echo $error . "<br>";
+                        
+                            echo " </strong> ";
+                        
+                            echo "</div>";
+                        
                         }
                         unset($_SESSION['error']);
                     ?>
