@@ -1,8 +1,10 @@
 <?php
     session_start();
-    //include('connectdb.php');
+    include "connectdb.php";
 
-    $connect = mysqli_connect("localhost", "root", "root", "seminardb") or die("Could not connect: " . mysqli_connect_errno());
+    //$connect = mysqli_connect("localhost", "root", "root", "seminardb") or die("Could not connect: " . mysqli_connect_errno());
+
+
 
     if (isset($_POST['login_user'])){
         $email = $_POST['email'];
