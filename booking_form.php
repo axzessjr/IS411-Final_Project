@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<head>
-    <title>booking form</title>
-</head>
-<body>
     <?php include "header.php" ?>
     <div class="class="login-form"">
     <form method="GET" action="booking.php">
@@ -24,5 +19,3 @@
     </form>
     </div>
 <?php include "footer.php" ?>
-</body>
-</html>
