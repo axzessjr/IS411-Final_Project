@@ -164,13 +164,13 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">research1</a>
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Research 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">research2</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Research 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">research3</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-3">Research 3</a>
               </li>
             </ul>
           </div>
