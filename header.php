@@ -144,6 +144,15 @@
     .head{
     background-color: #35322d;    
     }
+	
+   table, th, td {
+    background-color:  lightgrey;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    } 
+    th, td:hover {
+    background-color: grey;  }
 
 </style>
 

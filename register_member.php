@@ -2,17 +2,9 @@
     session_start();
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-    <title>Register</title>
-    <script src="js/jquery.min.js"> </script>
-    <script src="js/bootstrap.min.js"> </script>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-</head>
-<body>
+
+<?php include "header.php" ?>
+<div class="login-form">
     <form action='register_db.php' method='post'>
     <!-- notification error -->
         <?php if (isset($_SESSION['error'])) : ?>
@@ -39,25 +31,26 @@
                     ?>
                 </h3>
         <?php endif ?>
-
+<h2 class="text-center">Sign Up</h2>
     <label>Firstname</label>
-    <input type='text' name='fname' required> <br>
+    <input type='text' name='fname' required  class="form-control"> <br>
     <label>Lastname</label>
-    <input type='text' name='lname' required><br>
+    <input type='text' name='lname' required  class="form-control"><br>
     <label>Attendance_type</label>
-        <select id="attendance_type" name="attendance_type">
+        <select id="attendance_type" name="attendance_type"  class="form-control">
         <option value="Researcher">Researcher</option>
         <option value="Audience">Audience</option>
         </select><br>
     <label>Email</label>
-    <input type='email' name='email' required><br>
+    <input type='email' name='email' required  class="form-control"><br>
     <label>Password</label>
-    <input type='Password' name='password_1' required>
+    <input type='Password' name='password_1' required  class="form-control">
     <label>Re-enter password</label>
-    <input type='Password' name='password_2' required><br>
+    <input type='Password' name='password_2' required  class="form-control"><br>
 
-    <input type='submit' name='register_user' value='register'>
-    <input type='reset' value='clear'>
+    <input type='submit' name='register_user' value='register' class="btn btn-primary btn-block">
+    <input type='reset' value='clear' class="btn btn-outline-primary btn-block">
     </form>
-</body>
-</html>
+</div>
+
+<?php include "footer.php" ?>
