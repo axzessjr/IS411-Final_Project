@@ -30,7 +30,10 @@
         if (count($errors) == 0) {
             $password = md5($password_1);
 
-            $sql = "INSERT INTO user VALUES ('', '$firstname', '$lastname', '$email', '$password', '$staff')";
+             $sql = "INSERT INTO user (firstname, lastname, email, password, is_staff) 
+                    
+                    VALUES ('$firstname', '$lastname', '$email', '$password', '$staff')";
+            
             mysqli_query($connect, $sql);
             $_SESSION['email'] = $email;
             header('location: index.php');

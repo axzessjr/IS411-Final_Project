@@ -18,9 +18,14 @@ $hotel_id = '1';
 include_once("connectdb.php");
 
 //insert booking
-$sql = "INSERT INTO booking (booking_id, register_id, hotel_id, firstname, lastname, room_counts, breakfast_included) VALUES ( '','$register_id','$hotel_id' ,'$firstname' ,'$lastname' ,'$room_counts', '$brakefast')";
-$dbInsert = mysqli_query($connect, $sql)
+$sql = "INSERT INTO booking (booking_id, register_id, hotel_id, firstname, lastname, room_counts, breakfast_included) 
+               
+               VALUES ( '999','$register_id','$hotel_id' ,'$firstname' ,'$lastname' ,'$room_counts', '$brakefast')";
+
+    
+    $dbInsert = mysqli_query($connect, $sql)
     or die("Problem reading table: " . mysqli_error($connect));
+
 if($dbInsert){
     echo "Insert successful ";
 }
@@ -29,7 +34,7 @@ else {
 }
 
 //insert room
-$sql1 = "INSERT INTO room (room_id, room_number, room_type, bed_type, hotel_id) VALUES ( '','','$room_type','$bed_type' ,'$hotel_id')";
+$sql1 = "INSERT INTO room (room_id, room_number, room_type, bed_type, hotel_id) VALUES ( '62','75','$room_type','$bed_type' ,'$hotel_id')";
 $dbInsert1 = mysqli_query($connect, $sql1)
     or die("Problem reading table: " . mysqli_error($connect));
 if($dbInsert1){

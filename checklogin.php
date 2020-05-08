@@ -2,8 +2,6 @@
     session_start();
     include "connectdb.php";
 
-    //$connect = mysqli_connect("localhost", "root", "root", "seminardb") or die("Could not connect: " . mysqli_connect_errno());
-
 
 
     if (isset($_POST['login_user'])){
@@ -11,12 +9,23 @@
         $password = $_POST['password'];
 
         $password = md5($password);
-        $sql = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
-        $check = mysqli_query($connect, $sql);
+        $sql1 = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
+        $check = mysqli_query($connect, $sql1);
         $numrows = mysqli_num_rows($check);
 
         if ($numrows == 1) {
-            $_SESSION['email'] = $email;
+            
+              $_SESSION['email'] = $email;
+            
+              while ($arrRecords = mysqli_fetch_array($check)) {
+
+                     $_SESSION['user_id'] = $arrRecords["user_id"];
+                     $_SESSION['firstname'] = $arrRecords["firstname"];
+                     $_SESSION['lastname'] = $arrRecords["lastname"];
+
+              }
+            
+            
             
             header("location: index.php");
         } else {

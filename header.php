@@ -170,3 +170,56 @@
 <div class="head">
     <br><br><br><br><br><br><br><br>
 </div>
+
+<?php session_start(); 
+    
+    $_SESSION["user_id"];
+    $_SESSION["firstname"];
+    $_SESSION["lastname"];
+    $_SESSION["email"];
+    $_SESSION["is_staff"];
+    
+    
+    
+    ?>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
