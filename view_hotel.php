@@ -8,7 +8,9 @@ include_once("connectdb.php");
 $sql = "SELECT * FROM booking WHERE register_id = '$register_id'";
 $dbselect = mysqli_query($connect, $sql)
     or die("Problem reading table: " . mysqli_error($connect));
-    
+?>
+<div><br>
+<?php   
 echo "<table>";
 echo "<tr><th>Booking ID</th>";
 echo "<th>Register ID</th>";
@@ -27,6 +29,6 @@ while ($arrRecords = mysqli_fetch_array($dbselect)) {
         echo "<td>". $arrRecords["room_counts"] . "</td></tr>";
 }
 echo "</table>";
-
 ?>
+<br></div>
 <?php include "footer.php" ?>
