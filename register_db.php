@@ -36,7 +36,7 @@
             
             mysqli_query($connect, $sql);
             $_SESSION['email'] = $email;
-            header('location: index.php');
+            header('location: reg_seminar.php');
         } else {
             $_SESSION['error'] = $errors;
             header("location: register.php");

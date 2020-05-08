@@ -1,5 +1,5 @@
 <?
-    session_start();
+
     include("connectdb.php");
 
 if (isset($_POST['reg_seminar'])) {
