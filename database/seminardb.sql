@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2020 at 07:59 AM
+-- Generation Time: May 08, 2020 at 10:05 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -39,6 +39,13 @@ CREATE TABLE `booking` (
   `booking_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`booking_id`, `register_id`, `hotel_id`, `firstname`, `lastname`, `room_counts`, `breakfast_included`, `booking_date`) VALUES
+(18, 3, 2, 'Gina\r\n', 'Aguirre', 2, 1, '2020-05-08 08:04:46');
+
 -- --------------------------------------------------------
 
 --
@@ -51,6 +58,13 @@ CREATE TABLE `hotel` (
   `hotel_address` text NOT NULL,
   `hotel_contact` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `hotel`
+--
+
+INSERT INTO `hotel` (`hotel_id`, `hotel_name`, `hotel_address`, `hotel_contact`) VALUES
+(2, 'CENTARA GRAND', '999/99 Rama 1 Road, Pathumwan, Bangkok 10330, Thailand', '+66 (0) 2100 1234');
 
 -- --------------------------------------------------------
 
@@ -65,6 +79,13 @@ CREATE TABLE `register` (
   `register_type` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`register_id`, `user_id`, `institue`, `register_type`) VALUES
+(3, 1, 'TU', 'Early bird without workshop');
+
 -- --------------------------------------------------------
 
 --
@@ -75,6 +96,15 @@ CREATE TABLE `register_type` (
   `register_type` varchar(255) NOT NULL,
   `fee` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `register_type`
+--
+
+INSERT INTO `register_type` (`register_type`, `fee`) VALUES
+('Early bird with workshops', 1500),
+('Early bird without workshop', 1000),
+('standard with workshop ', 2500);
 
 -- --------------------------------------------------------
 
@@ -91,6 +121,13 @@ CREATE TABLE `research` (
   `status` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `research`
+--
+
+INSERT INTO `research` (`research_id`, `titile`, `track`, `file_path`, `upload_date`, `status`) VALUES
+(1, 'Test research', '', '', '0000-00-00', 'pending');
+
 -- --------------------------------------------------------
 
 --
@@ -104,6 +141,13 @@ CREATE TABLE `room` (
   `bed_type` varchar(255) NOT NULL,
   `hotel_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `room`
+--
+
+INSERT INTO `room` (`room_id`, `room_number`, `room_type`, `bed_type`, `hotel_id`) VALUES
+(1, 101, 'standard', 'twin', 2);
 
 -- --------------------------------------------------------
 
@@ -125,11 +169,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `email`, `password`, `is_staff`) VALUES
-(1, 'test', 'test', 'test@gmail.com', '2222222', 0),
-(2, 'sss', 'sss', 's@gmail.com', 'b59c67bf196a4758191e42f76670ceba', 0),
-(3, 'wwwww', 'www', 'w@gmail.com', '934b535800b1cba8f96a5d72f72f1611', 0),
-(4, 'eeeee', 'eeee', 'e@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0),
-(5, 'ss', 'sss', 't@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0);
+(1, 'Whitney ', 'Strong', 'test@gmail.com', '2222222', 0),
+(2, 'Zelma ', 'Gardner', 's@gmail.com', 'b59c67bf196a4758191e42f76670ceba', 0),
+(3, 'Gina ', 'Aguirre', 'w@gmail.com', '934b535800b1cba8f96a5d72f72f1611', 0),
+(4, 'David ', 'Hale', 'e@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0),
+(5, 'Penelope ', 'Choi', 't@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0);
 
 -- --------------------------------------------------------
 
@@ -209,25 +253,25 @@ ALTER TABLE `user_has_research`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `booking_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `booking_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `hotel`
 --
 ALTER TABLE `hotel`
-  MODIFY `hotel_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `hotel_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `register_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `register_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `research`
 --
 ALTER TABLE `research`
-  MODIFY `research_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `research_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `room`
