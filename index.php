@@ -7,7 +7,7 @@
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
         <div class="carousel-inner" role="listbox">
     
-          <div class="carousel-item active" style="background: url(img/home.jpg);">
+         <div class="carousel-item" style="background: url(img/home.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Welcome To Our Website</h2>
@@ -16,7 +16,7 @@
             </div>
           </div>
    
-          <div class="carousel-item" style="background: url(img/place1.jpg);">
+ <!--          <div class="carousel-item" style="background: url(img/place1.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Location</h2>
@@ -26,7 +26,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
      
           <div class="carousel-item" style="background: url(img/research.jpg);">
             <div class="carousel-container">
@@ -39,15 +39,15 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="carousel-item" style="background: url(img/register.jpg);">
+          <div class="carousel-item active" style="background: url(img/register.jpg);">
             <div class="carousel-container">
               <div id="research" class="carousel-content">
-                <h2 class="animated fadeInDown">Register Now!</h2>
+                <h2 class="animated fadeInDown">ลงทะเบียนเข้าร่วมงาน!</h2>
                 <p class="animated fadeInUp">สมัครเข้าร่วมงานสัมนาวันนี้ได้ในราคาพิเศษจาก 2000 บาทเหลือเพียง 1499 บาท</p>
                 <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">Register</a>
+                  <a href="reg_seminar.php" class="btn-menu animated fadeIn scrollto">Register</a>
                 </div>
               </div>
             </div>

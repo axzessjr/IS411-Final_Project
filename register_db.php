@@ -35,8 +35,19 @@
                     VALUES ('$firstname', '$lastname', '$email', '$password', '$staff')";
             
             mysqli_query($connect, $sql);
+            
+            
             $_SESSION['email'] = $email;
-            header('location: reg_seminar.php');
+            
+            
+            
+            
+            
+            header('location: index.php');
+            
+            
+            
+            
         } else {
             $_SESSION['error'] = $errors;
             header("location: register.php");
