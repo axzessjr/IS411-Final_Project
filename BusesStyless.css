@@ -1,0 +1,37 @@
+<!-- Buses style -->
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+  }
+
+#panel, #flip {
+  padding: 5px;
+  text-align: left;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-gap: 5px;
+  background-color:none;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 10px 0;
+  font-size: 30px;
+}
