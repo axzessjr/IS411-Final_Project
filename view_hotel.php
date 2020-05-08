@@ -4,13 +4,14 @@
 </head>
 <body>
 <?php
+
 $register_id = $_GET['register_id'];
 
-include_once("connectmydb.php");
+include_once("connectdb.php");
 
 $sql = "SELECT * FROM booking WHERE register_id = '$register_id'";
-$dbselect = mysqli_query($dbLocalhost, $sql)
-    or die("Problem reading table: " . mysqli_error($dbLocalhost));
+$dbselect = mysqli_query($connect, $sql)
+    or die("Problem reading table: " . mysqli_error($connect));
     
 echo "<table>";
 while ($arrRecords = mysqli_fetch_array($dbselect)) {
