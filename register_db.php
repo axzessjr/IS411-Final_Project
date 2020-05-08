@@ -10,7 +10,6 @@
         $lastname = mysqli_real_escape_string($connect, $_POST['lname']);
         $password_1 = mysqli_real_escape_string($connect, $_POST['password_1']);
         $password_2 = mysqli_real_escape_string($connect, $_POST['password_2']);
-        $attendance_type = mysqli_real_escape_string($connect, $_POST['attendance_type']);
         $staff = 0;
         
         //check match pqassword
@@ -31,7 +30,7 @@
         if (count($errors) == 0) {
             $password = md5($password_1);
 
-            $sql = "INSERT INTO user VALUES ('', '$firstname', '$lastname', '$email', '$password', '$attendance_type', '$staff')";
+            $sql = "INSERT INTO user VALUES ('', '$firstname', '$lastname', '$email', '$password', '$staff')";
             mysqli_query($connect, $sql);
             $_SESSION['email'] = $email;
             header('location: index.php');
