@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $user = "root";
-$pw = "";
+$pw = "root";
 $dbname = "seminardb";
 
 $connect = mysqli_connect($servername,$user,$pw,$dbname)
