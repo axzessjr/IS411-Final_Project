@@ -158,6 +158,15 @@
     } 
     th, td:hover {
     background-color: grey;  }
+	
+  .boatbusbts{
+    background-color:  #fffaf3;
+    text-align: center;
+    padding: 10px;
+    margin-left:auto; 
+    margin-right:auto;
+    font-weight: bold
+    } 
 
 </style>
 
