@@ -145,11 +145,14 @@
     background-color: #35322d;    
     }
 	
-   table, th, td {
+  table, th, td {
     background-color:  lightgrey;
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     padding: 10px;
+    margin-left:auto; 
+    margin-right:auto;
+    font-weight: bold
     } 
     th, td:hover {
     background-color: grey;  }
