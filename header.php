@@ -144,6 +144,22 @@
     .head{
     background-color: #35322d;    
     }
+	
+   table {
+  border-collapse: collapse;
+  }
+
+  table, th, td {
+  border: 1px solid black;
+  }
+	
+  th {
+  background-color:#ffb03b;
+  }
+	
+  tr {
+  background-color:#fffaf3;
+  }
 
 </style>
 
