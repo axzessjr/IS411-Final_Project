@@ -103,8 +103,8 @@ CREATE TABLE `register_type` (
 
 INSERT INTO `register_type` (`register_type`, `fee`) VALUES
 ('Early bird with workshops', 1500),
-('Early bird without workshop', 1000),
-('standard with workshop ', 2500);
+('Early bird without workshops', 1000),
+('Standard with workshops', 2500);
 
 -- --------------------------------------------------------
 
