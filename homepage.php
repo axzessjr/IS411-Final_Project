@@ -59,7 +59,7 @@
       </div>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">HOME</a></li>
+          <li class="active"><a href="homepage.php">HOME</a></li>
           <li><a href="">ABOUT</a></li>
           <li><a href="">RESEARCH</a></li>
           <li><a href="">HOTEL</a></li>

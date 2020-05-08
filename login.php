@@ -59,7 +59,7 @@
             <button type="submit" VALUE="login" NAME="login_user" class="btn btn-primary btn-block">Log in</button>
         </div> 
         <p style='text-align:center'>or</p>
-        <a href="register.php" class="btn btn-outline-primary btn-block">Sign up</a>
+        <a href="register_member.php" class="btn btn-outline-primary btn-block">Sign up</a>
         <?php if (isset($_SESSION['logout'])): ?>
             <h3 style='color: green'>
             <?php echo $_SESSION['logout'];
