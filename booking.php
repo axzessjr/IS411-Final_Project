@@ -11,7 +11,7 @@ $bed_type = $_GET['bed_type'];
 $brakefast = $_GET['r1'];
 $room_counts = $_GET['room_counts'];
 
-include_once("connectmydb.php");
+include_once("connectdb.php");
 
 $sql = "INSERT INTO booking (booking_id, register_id, hotel_id, firstname, lastname, room_counts) VALUES ( '','','' ,'$firstname' ,'$lastname' ,'$room_counts')";
 $dbInsert = mysqli_query($dbLocalhost, $sql)
