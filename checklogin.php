@@ -8,6 +8,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
+        $password = md5($password);
         $sql = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
         $check = mysqli_query($connect, $sql);
         $numrows = mysqli_num_rows($check);
