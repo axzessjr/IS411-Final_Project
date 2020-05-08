@@ -1,8 +1,9 @@
 <?php
-session_start();
+    
 
-unset($_SESSION['email']);
+    session_start();
+    session_destroy();
 
-session_destroy();
-header('location: login.php');
+
+header('location: index.php');
 ?>

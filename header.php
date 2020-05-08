@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<?php include "connectdb.php" ?>
+
 <html>
 
 <head>
@@ -169,12 +171,30 @@
       </div>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="homepage.php">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">RESEARCH</a></li>
-          <li><a href="">HOTEL</a></li>
-          <li><a href="">REGISTER</a></li>
-          <li><a href="">LOGIN</a></li>
+          <li class="active"><a href="index.php">หน้าหลัก</a></li>
+          <li><a href="">ตรวจสอบสถานะงานวิจัย</a></li>
+          <li><a href="">ข้อมูลโรงแรมและสถานที่พัก</a></li>
+            
+            <?php
+            
+                if($_SESSION["email"] != ""){
+                    
+                    echo "  <li><a href=''>แก้ไขข้อมูลส่วนตัว</a></li>
+                            <li><a href='logout.php'>ออกจากระบบ</a></li>      ";
+                    
+                } else {
+                    
+                    echo "<li><a href='login.php'>เข้าสู่ระบบ</a></li>";
+                    
+                    
+                }
+            
+            
+            ?>
+            
+            
+
+        
         </ul>
       </nav>
     </div>
@@ -197,18 +217,7 @@
     
 </div>
 
-<?php session_start(); 
-    
-    $_SESSION["user_id"];
-    $_SESSION["firstname"];
-    $_SESSION["lastname"];
-    $_SESSION["email"];
-    $_SESSION["is_staff"];
-    
-    
-    
-    ?>
-    
+
     
     
     
