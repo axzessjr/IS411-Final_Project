@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-<meta charset = "utf=8">
-<title> Edit Account</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
+
+<?php include "header.php"?>
+
+
 <style>
 th, td{
 	padding: 10px;
@@ -16,10 +9,7 @@ th, td{
 </style>
 
 <body>
-<?php
-include_once("CheckLoginOk.php");
-include_once("homepage.php");
-?>
+
 
 <FORM METHOD="POST" ACTION="<?php echo$_SERVER['PHP_SELF']; ?>">
 <CENTER>
@@ -56,6 +46,5 @@ include_once("homepage.php");
 </div>
 </CENTER>
 </FORM>
-</body>
-</html>
 
+    <?php include "footer.php"?>

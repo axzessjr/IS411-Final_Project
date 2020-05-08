@@ -179,7 +179,7 @@
             
                 if($_SESSION["email"] != ""){
                     
-                    echo "  <li><a href=''>แก้ไขข้อมูลส่วนตัว</a></li>
+                    echo "  <li><a href='editaccount.php'>แก้ไขข้อมูลส่วนตัว</a></li>
                             <li><a href='logout.php'>ออกจากระบบ</a></li>      ";
                     
                 } else {
