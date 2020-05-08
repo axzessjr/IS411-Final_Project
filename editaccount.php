@@ -10,13 +10,13 @@ th, td{
 
 <body>
 
-
+<div class="login-form"><br>
 <FORM METHOD="POST" ACTION="<?php echo$_SERVER['PHP_SELF']; ?>">
 <CENTER>
-<div class="container p-3 my-3 bg-dark text-white" style="width:540px;">
+<div style="width:300px;">
 
-<B>EDIT ACCOUNT INFORMATION</B>
-<BR><BR>
+	<h2 class="text-center">EDIT ACCOUNT</h2>
+<BR>
 <TABLE>
 <TR>
 	<TD>First Name</TD>
@@ -36,15 +36,11 @@ th, td{
 </TR>
 </TABLE> 
 <BR>
-<TABLE>
-<TR>
-	<INPUT TYPE="submit" NAME="submit" VALUE="Confirm" class="btn btn-outline-primary btn-block">
-</TR>
-</TABLE>
+	<INPUT TYPE="submit" NAME="submit" VALUE="Confirm" class="btn btn-primary btn-block">
 
  
 </div>
 </CENTER>
 </FORM>
-
+<br></div>
     <?php include "footer.php"?>
