@@ -33,6 +33,19 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+    
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/venobox/venobox.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>    
 
 </head>
 
@@ -89,7 +102,7 @@
             <div class="carousel-container">
               <div id="research" class="carousel-content">
                 <h2 class="animated fadeInDown">The best research of the year!</h2>
-                <p class="animated fadeInUp">งานวิจัยเกี่ยวกับสัญญาพาณิชย์อิเล็กทรอนิกส์ และการคุ้มครองผู้บริโภคในการทำสัญญาพาณิชย์อิเล็กทรอนิกส์ โดยศูนย์กฎหมายเทคโนโลยีสารสนเทศและการสื่อสาร<br><img src="img/research1.jpg" alt="research1" width= 20% height= 20%>&nbsp<img src="img/research2.jpg" alt="research2" width= 20% height= 20%></p>
+                <p class="animated fadeInUp">งานวิจัยเกี่ยวกับสัญญาพาณิชย์อิเล็กทรอนิกส์ และการคุ้มครองผู้บริโภคในการทำสัญญาพาณิชย์อิเล็กทรอนิกส์ โดยศูนย์กฎหมายเทคโนโลยีสารสนเทศและการสื่อสาร<br><br><img src="img/research1.jpg" alt="research1" width= 20% height= 20%>&nbsp<img src="img/research2.jpg" alt="research2" width= 20% height= 20%></p>
                 <div>
                   <a href="#menu" class="btn-menu animated fadeIn scrollto">More details</a>
                   <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Other research</a>
@@ -303,18 +316,7 @@
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-  <script src="vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/venobox/venobox.min.js"></script>
-  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
+  
 
 </body>
 </html>
