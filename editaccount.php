@@ -20,25 +20,25 @@ th, td{
 <TABLE>
 <TR>
 	<TD>First Name</TD>
-	<TD><INPUT TYPE="text" NAME="fname" VALUE="<?=$_GET[fname];?>"></TD>
+	<TD><INPUT TYPE="text" NAME="fname" VALUE="<?=$_GET[fname];?>" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Last Name</TD>
-	<TD><INPUT TYPE="text" NAME="lname" VALUE="<?=$_GET[lname];?>"></TD>
+	<TD><INPUT TYPE="text" NAME="lname" VALUE="<?=$_GET[lname];?>" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Email</TD>
-	<TD><INPUT TYPE="email" NAME="email"></TD>
+	<TD><INPUT TYPE="email" NAME="email" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Password</TD>
-	<TD><INPUT TYPE="password" NAME="pw"></TD>
+	<TD><INPUT TYPE="password" NAME="pw" class="form-control"></TD>
 </TR>
 </TABLE> 
 <BR>
 <TABLE>
 <TR>
-	<INPUT TYPE="submit" NAME="submit" VALUE="Confirm">
+	<INPUT TYPE="submit" NAME="submit" VALUE="Confirm" class="btn btn-outline-primary btn-block">
 </TR>
 </TABLE>
 
