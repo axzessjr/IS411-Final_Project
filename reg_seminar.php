@@ -24,13 +24,17 @@
             echo "<option value='$strReg_type'>$strReg_type</option>";
         }
     ?>
-    </select>
+    </select><br><br>
     <!-- fee show here -->
-    <div id="txtHint">Fee will show here...</div>
-    <labeL>Choose your attendace type</labeL><br>
+    <div id="txtHint">Fee will show here...</div><br>
+    
+    <labeL>Institute</labeL> :<br>
+    <input type="text" name="institute"><br><br>
+    
+    <labeL>Choose your attendace type :</labeL><br><br>
         <label><input type="radio" name="attendace_type" value="Researcher">Researcher</label>
         <label><input type="radio" name="attendace_type" value="Audience">Audience</label>
-    <input type='submit' name='reg_seminar' value='submit'>
+    <br><br><input type='submit' name='reg_seminar' value='submit'>
 </form>
 
 <script>
