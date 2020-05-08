@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <title>Register</title>
-    <script src="css/jquery.min.js"> </script>
-    <script src="css/bootstrap.min.js"> </script>
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
