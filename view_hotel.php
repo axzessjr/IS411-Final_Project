@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<head>
-    <title>view hotel</title>
-</head>
-<body>
+<?php include "header.php" ?>
 <?php
 
 $register_id = $_GET['register_id'];
@@ -33,5 +29,4 @@ while ($arrRecords = mysqli_fetch_array($dbselect)) {
 echo "</table>";
 
 ?>
-</body>
-</html>
+<?php include "footer.php" ?>
