@@ -145,11 +145,14 @@
     background-color: #35322d;    
     }
 	
-   table, th, td {
+  table, th, td {
     background-color:  lightgrey;
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     padding: 10px;
+    margin-left:auto; 
+    margin-right:auto;
+    font-weight: bold
     } 
     th, td:hover {
     background-color: grey;  }
@@ -162,7 +165,7 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Academic Seminar</span></a></h1>
+        <h1 class="text-light"><a href="homepage.php"><span>Academic Seminar</span></a></h1>
       </div>
       <nav class="nav-menu d-none d-lg-block">
         <ul>

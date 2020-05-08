@@ -9,7 +9,7 @@ $sql = "SELECT * FROM booking WHERE register_id = '$register_id'";
 $dbselect = mysqli_query($connect, $sql)
     or die("Problem reading table: " . mysqli_error($connect));
 ?>
-<div class="btn" ><br>
+<div><br>
 <?php   
 echo "<table>";
 echo "<tr><th>Booking ID</th>";
