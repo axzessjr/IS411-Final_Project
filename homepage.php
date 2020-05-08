@@ -241,7 +241,7 @@
       
     <!--Gallery Section-->
     <section id="gallery" class="gallery">
-      <div class="container-fluid">\
+      <div class="container-fluid">
         <div class="section-title">
           <h2>Seminar <span>Gallery</span></h2>
           <p>รวมภาพบรรยากาศงานสัมมนาต่างๆที่ผ่านมา</p>
