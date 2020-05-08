@@ -14,6 +14,14 @@ $dbselect = mysqli_query($connect, $sql)
     or die("Problem reading table: " . mysqli_error($connect));
     
 echo "<table>";
+echo "<tr><th>Booking ID</th>";
+echo "<th>Register ID</th>";
+echo "<th>Hotel ID</th>";
+echo "<th>Firstname</th>";
+echo "<th>Lastname</th>";
+echo "<th>Room counts</th></tr>";
+
+
 while ($arrRecords = mysqli_fetch_array($dbselect)) {
         echo "<tr><td>" . $arrRecords["booking_id"] . "</td>";
         echo "<td>". $arrRecords["register_id"] . "</td>";
