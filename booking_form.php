@@ -1,5 +1,5 @@
     <?php include "header.php" ?>
-    <div class="class="login-form"">
+    <div class="class="login-form="">
     <form method="GET" action="booking.php">
         <h2 class="text-center">Booking</h2>   
         Firstname: <INPUT TYPE="text" NAME="firstname" class="form-control"><br/>
