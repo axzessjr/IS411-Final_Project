@@ -31,7 +31,7 @@
                     ?>
                 </h3>
         <?php endif ?>
-
+<h2 class="text-center">Register</h2>
     <label>Firstname</label>
     <input type='text' name='fname' required  class="form-control"> <br>
     <label>Lastname</label>
