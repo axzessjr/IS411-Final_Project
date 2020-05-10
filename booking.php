@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>booking</title>
 </head>
@@ -18,9 +19,9 @@ $hotel_id = '1';
 include_once("connectdb.php");
 
 //insert booking
-$sql = "INSERT INTO booking (booking_id, register_id, hotel_id, firstname, lastname, room_counts, breakfast_included) 
+$sql = "INSERT INTO booking (register_id, hotel_id, firstname, lastname, room_counts, breakfast_included) 
                
-               VALUES ( '999','$register_id','$hotel_id' ,'$firstname' ,'$lastname' ,'$room_counts', '$brakefast')";
+               VALUES ( '$register_id','$hotel_id' ,'$firstname' ,'$lastname' ,'$room_counts', '$brakefast')";
 
     
     $dbInsert = mysqli_query($connect, $sql)
@@ -34,11 +35,9 @@ else {
 }
 
 //insert room
-<<<<<<< HEAD
-$sql1 = "INSERT INTO room (room_id, room_number, room_type, bed_type, hotel_id) VALUES ( '62','75','$room_type','$bed_type' ,'$hotel_id')";
-=======
-$sql1 = "INSERT INTO room (room_id, room_number, room_type, bed_type, hotel_id) VALUES ( '','102','$room_type','$bed_type' ,'$hotel_id')";
->>>>>>> 1154f4d78ff248a486995118aa71d112f51384c8
+
+$sql1 = "INSERT INTO room (room_type, bed_type, hotel_id) VALUES ( '$room_type','$bed_type' ,'$hotel_id')";
+
 $dbInsert1 = mysqli_query($connect, $sql1)
     or die("Problem reading table: " . mysqli_error($connect));
 if($dbInsert1){
