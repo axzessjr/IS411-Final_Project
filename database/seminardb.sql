@@ -76,6 +76,7 @@ CREATE TABLE `register` (
   `register_id` int(10) NOT NULL,
   `user_id` int(10) NOT NULL,
   `institue` text NOT NULL,
+  `attendance_type` varchar(255) NOT NULL,
   `register_type` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -83,8 +84,8 @@ CREATE TABLE `register` (
 -- Dumping data for table `register`
 --
 
-INSERT INTO `register` (`register_id`, `user_id`, `institue`, `register_type`) VALUES
-(3, 1, 'TU', 'Early bird without workshop');
+INSERT INTO `register` (`register_id`, `user_id`, `institue`, `attendance_type`, `register_type`) VALUES
+(3, 1, 'TU', 'researcher', 'Early bird without workshop');
 
 -- --------------------------------------------------------
 
