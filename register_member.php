@@ -31,19 +31,19 @@
                     ?>
                 </h3>
         <?php endif ?>
-<h2 class="text-center">Sign Up</h2>
-    <label>Firstname</label>
+<h2 class="text-center">Sign Up</h2><hr>
+    <label>Firstname :</label>
     <input type='text' name='fname' required  class="form-control"> <br>
-    <label>Lastname</label>
+    <label>Lastname :</label>
     <input type='text' name='lname' required  class="form-control"><br>
-    <label>Institute</label>
+    <label>Institute :</label>
     <input type='text' name='institute' required  class="form-control"><br>
-    <label>Email</label>
+    <label>Email :</label>
     <input type='email' name='email' required  class="form-control"><br>
-    <label>Password</label>
+    <label>Password :</label>
     <input type='Password' name='password_1' required  class="form-control">
-    <label>Re-enter password</label>
-    <input type='Password' name='password_2' required  class="form-control"><br>
+    <label>Re-enter password :</label>
+    <input type='Password' name='password_2' required  class="form-control"><hr>
 
     <input type='submit' name='register_user' value='register' class="btn btn-primary btn-block">
     <input type='reset' value='clear' class="btn btn-outline-primary btn-block">

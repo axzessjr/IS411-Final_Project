@@ -14,6 +14,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <form action="reg_seminar_db.php" method="POST">
+    
+    <h2 class="text-center">Register</h2><hr>
+    <p class="text-center">Attend for an academic seminar.</p><br>
+    
     <label>Select your register type :</label>
     <select name="reg_type" onchange="showfee(this.value)" class="form-control">
         <option value=''>Select your register type</option>
@@ -37,7 +41,7 @@
     <labeL>Choose your attendace type :</labeL><br>
         <label><input type="radio" name="attendace_type" value="Researcher" > &nbsp Researcher</label> &nbsp&nbsp&nbsp
         <label><input type="radio" name="attendace_type" value="Audience" > &nbsp Audience</label>
-    <br><br><input type='submit' name='reg_seminar' value='submit' class="btn btn-outline-primary btn-block">
+    <br><br><input type='submit' name='reg_seminar' value='submit' class="btn btn-primary btn-block">
     
      
 </form>

@@ -27,11 +27,11 @@
 
         <?php endif ?>
 
-        <h2 class="text-center">Log in</h2>       
+        <h2 class="text-center">Log in</h2> <hr>      
 
         <div class="form-group">
 
-        <label for="email">Email</label>
+        <label for="email">Email : </label>
 
             <input type="text" name="email" class="form-control" placeholder="email" required="required">
 
@@ -39,11 +39,13 @@
 
         <div class="form-group">
 
-        <label for="password">Password</label>
+        <label for="password">Password :</label>
 
             <input type="password" name="password" class="form-control" placeholder="password" required="required">
 
         </div>
+        
+        <hr> 
 
         <div class="form-group">
 

@@ -120,6 +120,33 @@
         padding: 30px;
 
     }
+    
+    .online_submission_panel {
+        
+        padding: 2%;
+        padding-left: 5%;
+        
+        
+    }
+    
+    .online_submission_form {
+        
+        width: 600px;
+        
+        padding: 2%;
+        
+    }
+    
+    .online_submission_form form {
+        
+        margin-bottom: 15px;
+
+        background: #f7f7f7;
+
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+        padding: 30px;
+    }
 
     .login-form h2 {
 
@@ -132,6 +159,8 @@
         min-height: 38px;
 
         border-radius: 2px;
+        
+        padding: 3px;
 
     }
 
@@ -180,25 +209,25 @@
       </div>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.php">หน้าหลัก</a></li>
+          <li class="active"><a href="index.php">Home</a></li>
           
-            <li><a href=''>เกี่ยวกับเรา</a></li>
+            <li><a href=''>About</a></li>
           
-            <li><a href="">ข้อมูลโรงแรมและสถานที่พัก</a></li>
+            <li><a href="">Hotels and Accommodations</a></li>
             
             <?php
             
                 if(!isset($_SESSION["email"])){
                     
-                     echo "<li><a href='login.php'>เข้าสู่ระบบ</a></li>";
+                     echo "<li><a href='login.php'>Log in</a></li>";
                     
                 } else {
                     
                   
                     echo "  
-                            <li><a href=''>ตรวจสอบสถานะงานวิจัย</a></li>
-                            <li><a href='editaccount.php'>แก้ไขข้อมูลส่วนตัว</a></li>
-                            <li><a href='logout.php'>ออกจากระบบ</a></li>      ";
+                            <li><a href=''>Tracking Research Status</a></li>
+                            <li><a href='editaccount.php'>Edit Profile</a></li>
+                            <li><a href='logout.php'>Sign Out</a></li>      ";
                     
                     
                 }

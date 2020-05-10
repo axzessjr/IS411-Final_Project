@@ -9,33 +9,14 @@
 
 <br>
 
-<style>
-
-    
-    .online_submission_panel {
-        
-        padding: 2%;
-        padding-left: 5%;
-        
-        
-    }
-    
-    .online_submission_form {
-        
-        padding: 2%;
-        
-    }
-    
-    
-
-</style>
-
 <div class="row">
     <div class="col-md-4">
 
 <div class="online_submission_panel">
 
-<h3>ลงทะเบียนนำเสนองานวิจัย</h3> <hr>
+    <div class="login-form">
+    
+<h3>Research Online Submission</h3> <hr>
     
         
     
@@ -56,11 +37,15 @@
     
         ?>
     
-        <p><b>ชื่อ-สกุล</b> : <?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></p> 
+        <p><b>Name</b> : <?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></p> 
 
-        <p><b>หน่วยงานที่สังกัด</b> : xxx</p> 
+        <p><b>Institute</b> : xxx</p> 
 
         <p><b>E-mail</b> : <?php echo $_SESSION['email']; ?></p>
+        
+        <p><b>Attendance Type</b> : <?php echo $_SESSION['email']; ?></p>
+        
+    </div>
     
 </div>    
 
@@ -69,34 +54,36 @@
     <div class="col-md-8">
 
 <div class="online_submission_form">
+    
+    
 
     <form method="post" action="online_submission.php" enctype="multipart/form-data">
     
         
-        <label> หมวดงานวิจัย :  </label> 
-            <select name="track">
-                <option value="">กรุณาเลือก</option>
+        <label> Track :  </label> 
+            <select name="track" class="form-control">
+                <option value="">Please selected</option>
                 <option value="Science and Technology">Science and Technology</option>
                 <option value="AI and Machine Learning">AI and Machine Learning</option>
                 <option value="Economics">Economics</option>
                 <option value="Business">Business</option>
-            </select><br><br>
+            </select><br>
         
         
-        <label>ชื่อหัวข้องานวิจัย : </label> <br>
+        <label>Title : </label> <br>
         
-        <textarea name="title" rows="4" cols="50"></textarea> <br><br>
+        <textarea name="title" class="form-control" rows="4" cols="50"></textarea> <br>
         
         
         
-        <label>อัปโหลดไฟล์งานวิจัย : </label> <br>
+        <label>Upload Research File : </label> <br>
         
-        <input type="file" name="file">
+        <input type="file" name="file" class="form-control">
         
-        <br><br><br>
+        <hr>
     
-        <input type="submit" name="submit" value="ยืนยัน">
-        <button><a href="online_submission.php">reset</a></button>
+        <input type="submit" name="submit" class="btn btn-primary btn-block" value="Submit" ><br>
+        <button class="btn btn-outline-primary btn-block">Reset</button>
     
     </form>
     
