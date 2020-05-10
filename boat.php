@@ -1,3 +1,4 @@
+<?php include "header.php" ?>
 <!DOCTYPE html>
 <html  lang="en">
 <head>
@@ -17,7 +18,7 @@
   }
   </style>
 
-<style>
+<!-- <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
@@ -26,12 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-size: 20px;
     }
-</style>
+</style> -->
 
 <body>
-<br>
-<div>
-    <h3>&nbsp; &nbsp; &nbsp; &nbsp; งานสัมมนา เสริมความคิด ติดปีกวิชาชีพ กับคณะพาณิชยศาสตร์ ธรรมศาสตร์ ประจำปี 2563 <span style="color: cadetblue">#สัมมนา มธ.63</span></h3>
+<div class= "boatbusbts">
+    <h3>งานสัมนาวิชาการสุดยอดงานวิจัยดีเด่นแห่งประเทศไทย ประจำปี 2563 <br><span style="color: cadetblue">#สัมมนา มธ.63</span></h3>
 </div>
     
 <div class="container" style="margin-top:30px">
@@ -43,16 +43,13 @@ p {
       <h3 style="color: crimson">เดินทางโดย</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link" href="bts.html">BTS Skytrain</a>
+          <a class="nav-link" href="bts.php">BTS Skytrain</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="buses.html">Buses</a>
+          <a class="nav-link" href="buses.php">Buses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="boat.html">Boat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="boat.php">Boat</a>
         </li>
       </ul>
       <hr class="d-sm-none">
@@ -60,14 +57,17 @@ p {
     <div class="col-sm-8">
       <h3 style="text-align: center">โดยสาร เรือข้ามฝาก</h3>
       <div class="container">
-      <a target="_blank" href="Photo/boat2.jpg">
-      <img src="Photo/boat2.jpg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%;height:auto;">
+      <a target="_blank" href="img/boat2.jpg">
+      <img src="img/boat2.jpg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%;height:auto;">
     </a></div>
-    <p>– นั่งรถเมล์มาแถวโรงพยาบาลศิริราช-วังหลัง แล้วนั่งเรือข้ามฟากจากฝั่งโรงพยาบาลศิริราช ที่ท่าวังหลังมายังท่าพระจันทร์</p>
+    <div>
+    <p>วิธีแรก นั่งรถเมล์มาแถวโรงพยาบาลศิริราช-วังหลัง แล้วนั่งเรือข้ามฟากจากฝั่งโรงพยาบาลศิริราช ที่ท่าวังหลังมายังท่าพระจันทร์</p>
     <BR>
-    <p>– นั่งเรือด่วนเจ้าพระยา ลงที่ “ท่าพรานนก” แล้วนั่งเรือข้ามฟากจากฝั่งโรงพยาบาลศิริราช ที่ท่าวังหลังมายังท่าพระจันทร์</p>
+    <p>วิธีที่สอง นั่งเรือด่วนเจ้าพระยา ลงที่ “ท่าพรานนก” แล้วนั่งเรือข้ามฟากจากฝั่งโรงพยาบาลศิริราช ที่ท่าวังหลังมายังท่าพระจันทร์</p>
+    </div>
     </div>
     </div>
     </div>
     </body>
 </html>
+<?php include "footer.php" ?>
