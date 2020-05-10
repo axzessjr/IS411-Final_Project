@@ -75,7 +75,7 @@ INSERT INTO `hotel` (`hotel_id`, `hotel_name`, `hotel_address`, `hotel_contact`)
 CREATE TABLE `register` (
   `register_id` int(10) NOT NULL,
   `user_id` int(10) NOT NULL,
-  `institue` text NOT NULL,
+  `attendance_type` varchar(255) NOT NULL,
   `register_type` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -83,8 +83,8 @@ CREATE TABLE `register` (
 -- Dumping data for table `register`
 --
 
-INSERT INTO `register` (`register_id`, `user_id`, `institue`, `register_type`) VALUES
-(3, 1, 'TU', 'Early bird without workshop');
+INSERT INTO `register` (`register_id`, `user_id`, `attendance_type`, `register_type`) VALUES
+(3, 1, 'researcher', 'Early bird without workshop');
 
 -- --------------------------------------------------------
 
@@ -159,6 +159,7 @@ CREATE TABLE `user` (
   `user_id` int(10) NOT NULL,
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
+  `institute` text NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `is_staff` tinyint(1) DEFAULT NULL
@@ -168,12 +169,12 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `email`, `password`, `is_staff`) VALUES
-(1, 'Whitney ', 'Strong', 'test@gmail.com', '2222222', 0),
-(2, 'Zelma ', 'Gardner', 's@gmail.com', 'b59c67bf196a4758191e42f76670ceba', 0),
-(3, 'Gina ', 'Aguirre', 'w@gmail.com', '934b535800b1cba8f96a5d72f72f1611', 0),
-(4, 'David ', 'Hale', 'e@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0),
-(5, 'Penelope ', 'Choi', 't@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0);
+INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `institute`, `email`, `password`, `is_staff`) VALUES
+(1, 'Whitney ', 'Strong', 'TU', 'test@gmail.com', '2222222', 0),
+(2, 'Zelma ', 'Gardner', 'CU', 's@gmail.com', 'b59c67bf196a4758191e42f76670ceba', 0),
+(3, 'Gina ', 'Aguirre', 'TU', 'w@gmail.com', '934b535800b1cba8f96a5d72f72f1611', 0),
+(4, 'David ', 'Hale', 'TU', 'e@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0),
+(5, 'Penelope ', 'Choi', 'CU', 't@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0);
 
 -- --------------------------------------------------------
 
