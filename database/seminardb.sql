@@ -83,8 +83,8 @@ CREATE TABLE `register` (
 -- Dumping data for table `register`
 --
 
-INSERT INTO `register` (`register_id`, `user_id`, `institue`, `attendance_type`, `register_type`) VALUES
-(3, 1, 'TU', 'researcher', 'Early bird without workshop');
+INSERT INTO `register` (`register_id`, `user_id`, `attendance_type`, `register_type`) VALUES
+(3, 1, 'researcher', 'Early bird without workshop');
 
 -- --------------------------------------------------------
 
