@@ -1,10 +1,10 @@
 <?php
 include "connectdb.php";
 
-if (!file_exists("audience1.csv"))
-    $fileTextFile1 = fopen ("audience1.csv",'w');
+if (!file_exists("report/audience1.csv"))
+    $fileTextFile1 = fopen ("report/audience1.csv",'w');
 else
-    $fileTextFile1 = fopen ("audience1.csv",'a');
+    $fileTextFile1 = fopen ("report/audience1.csv",'a');
 
 fwrite($fileTextFile1,"Audience\r\n");
 fwrite($fileTextFile1,"Register Type: Early bird with workshops\r\n");
@@ -22,7 +22,7 @@ $arrRecord = mysqli_fetch_array($dbRecords);
     fwrite($fileTextFile1, ",");
     fwrite($fileTextFile1, $arrRecord[lastname]);
     fwrite($fileTextFile1, ",");
-    fwrite($fileTextFile1, $arrRecord[institue]);
+    fwrite($fileTextFile1, $arrRecord[institute]);
     fwrite($fileTextFile1, "\r\n");
     $sum=$sum+1;
 }
@@ -35,10 +35,10 @@ if (!fclose($fileTextFile1))
     echo "<p>Error closing file!</p>";
 
 
-if (!file_exists("audience2.csv"))
-    $fileTextFile2 = fopen ("audience2.csv",'w');
+if (!file_exists("report/audience2.csv"))
+    $fileTextFile2 = fopen ("report/audience2.csv",'w');
 else
-    $fileTextFile2 = fopen ("audience2.csv",'a');
+    $fileTextFile2 = fopen ("report/audience2.csv",'a');
 
 fwrite($fileTextFile2,"Audience\r\n");
 fwrite($fileTextFile2,"Register Type: Early bird without workshops\r\n");
@@ -56,7 +56,7 @@ $arrRecord2 = mysqli_fetch_array($dbRecords2);
     fwrite($fileTextFile2, ",");
     fwrite($fileTextFile2, $arrRecord2[lastname]);
     fwrite($fileTextFile2, ",");
-    fwrite($fileTextFile2, $arrRecord2[institue]);
+    fwrite($fileTextFile2, $arrRecord2[institute]);
     fwrite($fileTextFile2, "\r\n");
     $sum2=$sum2+1;
 }
@@ -69,10 +69,10 @@ if (!fclose($fileTextFile2))
     echo "<p>Error closing file!</p>";    
 
 
-if (!file_exists("audience3.csv"))
-    $fileTextFile3 = fopen ("audience3.csv",'w');
+if (!file_exists("report/audience3.csv"))
+    $fileTextFile3 = fopen ("report/audience3.csv",'w');
 else
-    $fileTextFile3 = fopen ("audience3.csv",'a');
+    $fileTextFile3 = fopen ("report/audience3.csv",'a');
 
 fwrite($fileTextFile3,"Audience\r\n");
 fwrite($fileTextFile3,"Register Type: Standard with workshops\r\n");
@@ -90,7 +90,7 @@ $arrRecord3 = mysqli_fetch_array($dbRecords3);
     fwrite($fileTextFile3, ",");
     fwrite($fileTextFile3, $arrRecord3[lastname]);
     fwrite($fileTextFile3, ",");
-    fwrite($fileTextFile3, $arrRecord3[institue]);
+    fwrite($fileTextFile3, $arrRecord3[institute]);
     fwrite($fileTextFile3, "\r\n");
     $sum3=$sum3+1;
 }
