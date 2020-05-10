@@ -172,19 +172,24 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.php">หน้าหลัก</a></li>
-          <li><a href="">ตรวจสอบสถานะงานวิจัย</a></li>
-          <li><a href="">ข้อมูลโรงแรมและสถานที่พัก</a></li>
+          
+            <li><a href=''>เกี่ยวกับเรา</a></li>
+          
+            <li><a href="">ข้อมูลโรงแรมและสถานที่พัก</a></li>
             
             <?php
             
-                if($_SESSION["email"] != ""){
+                if(!isset($_SESSION["email"])){
                     
-                    echo "  <li><a href='editaccount.php'>แก้ไขข้อมูลส่วนตัว</a></li>
-                            <li><a href='logout.php'>ออกจากระบบ</a></li>      ";
+                     echo "<li><a href='login.php'>เข้าสู่ระบบ</a></li>";
                     
                 } else {
                     
-                    echo "<li><a href='login.php'>เข้าสู่ระบบ</a></li>";
+                  
+                    echo "  
+                            <li><a href=''>ตรวจสอบสถานะงานวิจัย</a></li>
+                            <li><a href='editaccount.php'>แก้ไขข้อมูลส่วนตัว</a></li>
+                            <li><a href='logout.php'>ออกจากระบบ</a></li>      ";
                     
                     
                 }
