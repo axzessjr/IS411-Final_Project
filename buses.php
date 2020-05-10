@@ -1,3 +1,5 @@
+<?php include "header.php" ?>
+
 <!DOCTYPE html>
 <html  lang="en">
 <head>
@@ -36,10 +38,8 @@ $(document).ready(function(){
   });
 });
 </script>
-
-<br>
-<div>
-    <h2>&nbsp; &nbsp; &nbsp; &nbsp; วิธีการเดินทางไปยัง งานสัมมนา เสริมความคิด ติดปีกวิชาชีพ กับคณะพาณิชยศาสตร์ ธรรมศาสตร์ ท่าพระจันทร์ ประจำปี 2563 <span style="color: cadetblue">#สัมมนา มธ.63</span></h2>
+<div class= "boatbusbts">
+    <h3>งานสัมนาวิชาการสุดยอดงานวิจัยดีเด่นแห่งประเทศไทย ประจำปี 2563 <br><span style="color: cadetblue">#สัมมนา มธ.63</span></h3>
 </div>
     
 <div class="container" style="margin-top:30px">
@@ -51,16 +51,13 @@ $(document).ready(function(){
       <h3 style="color: crimson">เดินทางโดย</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link" data-toggle="pills" href="bts.html">BTS Skytrain</a>
+          <a class="nav-link" data-toggle="pills" href="bts.php">BTS Skytrain</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="pills"  href="buses.html">Buses</a>
+          <a class="nav-link" data-toggle="pills"  href="buses.php">Buses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="pills" href="boat.html">Boat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" data-toggle="pills" href="boat.php">Boat</a>
         </li>
       </ul>
       <hr class="d-sm-none">
@@ -69,33 +66,33 @@ $(document).ready(function(){
 <div class="col-sm-8">
   <h3 style="text-align: center">โดยสาร รถเมล์ประจำทาง</h3>
     <div class="container">
-    <a target="_blank" href="Photo/tbs7.jpg">
-      <img src="Photo/tbs7.jpg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%">
+    <a target="_blank" href="img/tbs7.jpg">
+      <img src="img/tbs7.jpg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%">
     </a>
     </div>
       <br>
     <div class="grid-container">
-    <div><img src="Photo/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
+    <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
     <div id="flip1">สายที่ผ่านสนามหลวง</div>
     </div>
     <p id="panel1">สาย 19, 30, 32, 33, 53, 60, 70, 201, ปอ.32, ปอ.59, ปอ.สาย 3, ปอ.7, ปอ.สาย 80,ปอ.สาย 91, ปอ.503</p>
     <div class="grid-container">
-    <div><img src="Photo/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
+    <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
     <div id="flip2">สายที่ผ่านท่าพระจันทร์</div>
     </div>
     <p id="panel2">สาย 32, 53, 124, 203, 201, ปอ.32, ปอ.524</p>
     <div class="grid-container">
-    <div><img src="Photo/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
+    <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
     <div id="flip3">สายที่ผ่านท่าช้าง, วัดพระแก้วฯ</div>
     </div>
     <p id="panel3">สาย 32, 53, 124, 203, 201, ปอ.32, ปอ.524</p>
     <div class="grid-container">
-    <div><img src="Photo/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
+    <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
     <div id="flip4">สายที่ผ่านโรงพยาบาลศิริราช</div>
     </div>
     <p id="panel4">สาย 19, 57, 81, 149, ปอ.91</p>
     <div class="grid-container">
-    <div><img src="Photo/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
+    <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
     <div id="flip5">สายที่ผ่านสะพานพระปิ่นเกล้า</div>
     </div>
     <p id="panel5">สาย 124, 125, 127, 146, 149, 203, 516, ปอ.8, ปอ.47, ปอ.79</p>
@@ -105,3 +102,4 @@ $(document).ready(function(){
 
 </body>
 </html>
+<?php include "footer.php" ?>
