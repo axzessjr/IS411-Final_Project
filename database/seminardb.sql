@@ -159,7 +159,7 @@ CREATE TABLE `user` (
   `user_id` int(10) NOT NULL,
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
-  `institue` text NOT NULL,
+  `institute` text NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `is_staff` tinyint(1) DEFAULT NULL
@@ -169,7 +169,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `institue`, `email`, `password`, `is_staff`) VALUES
+INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `institute`, `email`, `password`, `is_staff`) VALUES
 (1, 'Whitney ', 'Strong', 'TU', 'test@gmail.com', '2222222', 0),
 (2, 'Zelma ', 'Gardner', 'CU', 's@gmail.com', 'b59c67bf196a4758191e42f76670ceba', 0),
 (3, 'Gina ', 'Aguirre', 'TU', 'w@gmail.com', '934b535800b1cba8f96a5d72f72f1611', 0),
