@@ -6,10 +6,16 @@
     }
     include("connectdb.php");
 ?>
+
+
+<?php include "header.php" ?>
+
+<div class="login-form">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <form action="reg_seminar_db.php" method="POST">
-    <label>Select your register type</label>
-    <select name="reg_type" onchange="showfee(this.value)">
+    <label>Select your register type :</label>
+    <select name="reg_type" onchange="showfee(this.value)" class="form-control">
         <option value=''>Select your register type</option>
         
     <?php
@@ -28,13 +34,12 @@
     <!-- fee show here -->
     <div id="txtHint">Fee will show here...</div><br>
     
-    <labeL>Institute</labeL> :<br>
-    <input type="text" name="institute"><br><br>
+    <labeL>Choose your attendace type :</labeL><br>
+        <label><input type="radio" name="attendace_type" value="Researcher" > &nbsp Researcher</label> &nbsp&nbsp&nbsp
+        <label><input type="radio" name="attendace_type" value="Audience" > &nbsp Audience</label>
+    <br><br><input type='submit' name='reg_seminar' value='submit' class="btn btn-outline-primary btn-block">
     
-    <labeL>Choose your attendace type :</labeL><br><br>
-        <label><input type="radio" name="attendace_type" value="Researcher">Researcher</label>
-        <label><input type="radio" name="attendace_type" value="Audience">Audience</label>
-    <br><br><input type='submit' name='reg_seminar' value='submit'>
+     
 </form>
 
 <script>
@@ -54,3 +59,7 @@ function showfee(str) {
   xhttp.send();
 }
 </script>
+
+</div>
+    
+<?php include "footer.php" ?>

@@ -8,6 +8,7 @@
         $email = mysqli_real_escape_string($connect, $_POST['email']);
         $firstname = mysqli_real_escape_string($connect, $_POST['fname']);
         $lastname = mysqli_real_escape_string($connect, $_POST['lname']);
+        $institute = mysqli_real_escape_string($connect, $_POST['institute']);
         $password_1 = mysqli_real_escape_string($connect, $_POST['password_1']);
         $password_2 = mysqli_real_escape_string($connect, $_POST['password_2']);
         $staff = 0;
@@ -30,11 +31,11 @@
         if (count($errors) == 0) {
             $password = md5($password_1);
 
-             $sql = "INSERT INTO user (firstname, lastname, email, password, is_staff) 
+             $sql = "INSERT INTO user (firstname, lastname, institute, email, password, is_staff) 
                     
-                    VALUES ('$firstname', '$lastname', '$email', '$password', '$staff')";
+                    VALUES ('$firstname', '$lastname', '$institute', '$email', '$password', '$staff')";
             
-            mysqli_query($connect, $sql);
+            mysqli_query($connect, $sql) or die("SQL errors " . mysqli_error($connect));
             
             
             $_SESSION['email'] = $email;
@@ -50,7 +51,7 @@
             
         } else {
             $_SESSION['error'] = $errors;
-            header("location: register.php");
+            header("location: register_member.php");
         }
     }
 

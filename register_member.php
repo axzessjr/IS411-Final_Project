@@ -36,11 +36,8 @@
     <input type='text' name='fname' required  class="form-control"> <br>
     <label>Lastname</label>
     <input type='text' name='lname' required  class="form-control"><br>
-    <label>Attendance_type</label>
-        <select id="attendance_type" name="attendance_type"  class="form-control">
-        <option value="Researcher">Researcher</option>
-        <option value="Audience">Audience</option>
-        </select><br>
+    <label>Institute</label>
+    <input type='text' name='institute' required  class="form-control"><br>
     <label>Email</label>
     <input type='email' name='email' required  class="form-control"><br>
     <label>Password</label>
