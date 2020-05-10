@@ -225,7 +225,7 @@
                     
                   
                     echo "  
-                            <li><a href=''>Tracking Research Status</a></li>
+                            <li><a href='online_submission.php'>Online Research Submission</a></li>
                             <li><a href='editaccount.php'>Edit Profile</a></li>
                             <li><a href='logout.php'>Sign Out</a></li>      ";
                     

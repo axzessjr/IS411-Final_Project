@@ -1,9 +1,14 @@
 <?php
     session_start();
     if (!isset($_SESSION['email'])) {
-        $_SESSION['msg'] = "You must log in first";
-        header('location: login.php');
+        
+        echo "<script> alert('You must Log in or Sign up first!'); </script>";
+
+        echo "<script> location.href = 'login.php'; </script>";
+
     }
+
+   
 ?>
 <?php include "header.php" ?>
 
@@ -16,34 +21,44 @@
 
     <div class="login-form">
     
-<h3>Research Online Submission</h3> <hr>
+<h3>Online Research Submission</h3> <hr>
     
         
     
         <?php 
     
-        $sql1 = "SELECT * FROM user WHERE email = '$email'";
-        $check = mysqli_query($connect, $sql1); 
+        $sql1 = "SELECT * FROM user, register WHERE user.user_id = register.user_id AND email = '$_SESSION[email]'";
+        $query = mysqli_query($connect, $sql1); 
 
-         while ($arrRecords = mysqli_fetch_array($check)) {
+         while ($arrRecords = mysqli_fetch_array($query)) {
 
                      $_SESSION['user_id'] = $arrRecords["user_id"];
                      $_SESSION['firstname'] = $arrRecords["firstname"];
                      $_SESSION['lastname'] = $arrRecords["lastname"];
+                    
+                     $_SESSION['attendance_type'] = $arrRecords["attendance_type"];
 
               }
     
+
+          if ($_SESSION['attendance_type'] != "Researcher") {
+        
+                echo "<script> alert('You must attend a seminar as a Researcher!'); </script>";
+
+                echo "<script> location.href = 'index.php'; </script>";
+
+          }
     
     
         ?>
     
         <p><b>Name</b> : <?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></p> 
 
-        <p><b>Institute</b> : xxx</p> 
+        <p><b>Institute</b> : <?php echo $_SESSION['institute']; ?></p> 
 
         <p><b>E-mail</b> : <?php echo $_SESSION['email']; ?></p>
         
-        <p><b>Attendance Type</b> : <?php echo $_SESSION['email']; ?></p>
+        <p><b>Attendance Type</b> : <?php echo $_SESSION['attendance_type']; ?></p>
         
     </div>
     
@@ -61,7 +76,7 @@
     
         
         <label> Track :  </label> 
-            <select name="track" class="form-control">
+            <select name="track" class="form-control" required="required">
                 <option value="">Please selected</option>
                 <option value="Science and Technology">Science and Technology</option>
                 <option value="AI and Machine Learning">AI and Machine Learning</option>
@@ -72,18 +87,19 @@
         
         <label>Title : </label> <br>
         
-        <textarea name="title" class="form-control" rows="4" cols="50"></textarea> <br>
+        <textarea name="title" class="form-control" rows="4" cols="50" required="required"></textarea> <br>
         
         
         
         <label>Upload Research File : </label> <br>
         
-        <input type="file" name="file" class="form-control">
+        <input type="file" name="file" class="form-control" required="required">
         
         <hr>
     
         <input type="submit" name="submit" class="btn btn-primary btn-block" value="Submit" ><br>
-        <button class="btn btn-outline-primary btn-block">Reset</button>
+        <input type='reset' class="btn btn-outline-primary btn-block" value='clear'>
+   
     
     </form>
     

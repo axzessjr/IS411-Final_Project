@@ -1,8 +1,11 @@
 <?php
     session_start();
     if (!isset($_SESSION['email'])) {
-        $_SESSION['msg'] = "You must log in first";
-        header('location: login.php');
+        
+        echo "<script> alert('You must log in or sign up first in order to attending for an academic seminar!'); </script>";
+
+        echo "<script> location.href = 'login.php'; </script>";
+
     }
     include("connectdb.php");
 ?>
@@ -19,7 +22,7 @@
     <p class="text-center">Attend for an academic seminar.</p><br>
     
     <label>Select your register type :</label>
-    <select name="reg_type" onchange="showfee(this.value)" class="form-control">
+    <select name="reg_type" onchange="showfee(this.value)" class="form-control" required="required">
         <option value=''>Select your register type</option>
         
     <?php
@@ -39,8 +42,8 @@
     <div id="txtHint">Fee will show here...</div><br>
     
     <labeL>Choose your attendace type :</labeL><br>
-        <label><input type="radio" name="attendace_type" value="Researcher" > &nbsp Researcher</label> &nbsp&nbsp&nbsp
-        <label><input type="radio" name="attendace_type" value="Audience" > &nbsp Audience</label>
+        <label><input type="radio" name="attendance_type" value="Researcher" required="required"> &nbsp Researcher</label> &nbsp&nbsp&nbsp
+        <label><input type="radio" name="attendance_type" value="Audience" required="required"> &nbsp Audience</label>
     <br><br><input type='submit' name='reg_seminar' value='submit' class="btn btn-primary btn-block">
     
      

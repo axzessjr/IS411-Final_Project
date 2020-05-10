@@ -37,14 +37,29 @@
             
             mysqli_query($connect, $sql) or die("SQL errors " . mysqli_error($connect));
             
+             $sql1 = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
+                
+             $check = mysqli_query($connect, $sql1) or die("SQL errors " . mysqli_error($connect));;
+            
             
             $_SESSION['email'] = $email;
             
+             while ($arrRecords = mysqli_fetch_array($check)) {
+
+                     $_SESSION['user_id'] = $arrRecords["user_id"];
+                     $_SESSION['firstname'] = $arrRecords["firstname"];
+                     $_SESSION['lastname'] = $arrRecords["lastname"];
+                     $_SESSION['institute'] = $arrRecords["institute"];
+
+
+              }
             
             
             
+            echo "<script> alert('Sign up success! Now you can attend for a seminar by clicking Register button at the home page'); </script>";
+
+            echo "<script> location.href = 'index.php'; </script>";
             
-            header('location: index.php');
             
             
             

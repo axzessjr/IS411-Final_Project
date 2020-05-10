@@ -5,5 +5,8 @@
     session_destroy();
 
 
-header('location: index.php');
+echo "<script> alert('You are logging out.'); </script>";
+
+echo "<script> location.href = 'index.php'; </script>";
+
 ?>

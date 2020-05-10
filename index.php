@@ -44,8 +44,8 @@
           <div class="carousel-item active" style="background: url(img/register.jpg);">
             <div class="carousel-container">
               <div id="research" class="carousel-content">
-                <h2 class="animated fadeInDown">ลงทะเบียนเข้าร่วมงาน!</h2>
-                <p class="animated fadeInUp">สมัครเข้าร่วมงานสัมนาวันนี้ได้ในราคาพิเศษจาก 2000 บาทเหลือเพียง 1499 บาท</p>
+                <h2 class="animated fadeInDown">Attend for an Academic Seminar.</h2>
+                <p class="animated fadeInUp">Register today for getting a discount from 2,000 THB with special price 1,500 THB</p>
                 <div>
                   <a href="reg_seminar.php" class="btn-menu animated fadeIn scrollto">Register</a>
                 </div>

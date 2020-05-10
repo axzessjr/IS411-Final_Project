@@ -22,12 +22,14 @@
                      $_SESSION['user_id'] = $arrRecords["user_id"];
                      $_SESSION['firstname'] = $arrRecords["firstname"];
                      $_SESSION['lastname'] = $arrRecords["lastname"];
+                     $_SESSION['institute'] = $arrRecords["institute"];
 
               }
             
-            
-            
-            header("location: index.php");
+            echo "<script> alert('You are logging in.'); </script>";
+
+            echo "<script> location.href = 'index.php'; </script>";
+        
         } else {
             $_SESSION['error'] = "Wrong Email or password Login failed";
             header("location: login.php");

@@ -1,7 +1,7 @@
 <footer id="footer">
     <div class="container">
-      <h3>Thank You For Visiting Our Website.</h3><br>
-      <h5>ช่องทางติดต่อ :</h5><br>
+      <h3>Thank you for visiting our website.</h3><br>
+      <h5>Contact us :</h5><br>
       <div class="social-links">
         <a href="" class="facebook"><i class="fab fa-facebook"></i></a>
         <a href="" class="phone"><i class="fas fa-phone"></i></a>

@@ -20,7 +20,12 @@
     $_SESSION["firstname"];
     $_SESSION["lastname"];
     $_SESSION["email"];
+    $_SESSION["institute"];
     $_SESSION["is_staff"];
+
+    $_SESSION["attendance_type"];
+
+    $_SESSION['error'];
     
     
     
