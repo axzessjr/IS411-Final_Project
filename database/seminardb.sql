@@ -2,21 +2,13 @@
 -- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 08, 2020 at 10:05 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.28
+-- Host: localhost:8889
+-- Generation Time: May 10, 2020 at 09:35 PM
+-- Server version: 5.7.26
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `seminardb`
@@ -36,15 +28,8 @@ CREATE TABLE `booking` (
   `lastname` varchar(255) NOT NULL,
   `room_counts` int(10) NOT NULL,
   `breakfast_included` tinyint(1) NOT NULL,
-  `booking_date` timestamp NOT NULL DEFAULT current_timestamp()
+  `booking_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `booking`
---
-
-INSERT INTO `booking` (`booking_id`, `register_id`, `hotel_id`, `firstname`, `lastname`, `room_counts`, `breakfast_included`, `booking_date`) VALUES
-(18, 3, 2, 'Gina\r\n', 'Aguirre', 2, 1, '2020-05-08 08:04:46');
 
 -- --------------------------------------------------------
 
@@ -79,13 +64,6 @@ CREATE TABLE `register` (
   `register_type` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `register`
---
-
-INSERT INTO `register` (`register_id`, `user_id`, `attendance_type`, `register_type`) VALUES
-(3, 1, 'researcher', 'Early bird without workshop');
-
 -- --------------------------------------------------------
 
 --
@@ -114,19 +92,12 @@ INSERT INTO `register_type` (`register_type`, `fee`) VALUES
 
 CREATE TABLE `research` (
   `research_id` int(11) NOT NULL,
-  `titile` text NOT NULL,
+  `title` text NOT NULL,
   `track` varchar(255) NOT NULL,
   `file_path` varchar(255) NOT NULL,
-  `upload_date` date NOT NULL,
+  `upload_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `research`
---
-
-INSERT INTO `research` (`research_id`, `titile`, `track`, `file_path`, `upload_date`, `status`) VALUES
-(1, 'Test research', '', '', '0000-00-00', 'pending');
 
 -- --------------------------------------------------------
 
@@ -141,13 +112,6 @@ CREATE TABLE `room` (
   `bed_type` varchar(255) NOT NULL,
   `hotel_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `room`
---
-
-INSERT INTO `room` (`room_id`, `room_number`, `room_type`, `bed_type`, `hotel_id`) VALUES
-(1, 101, 'standard', 'twin', 2);
 
 -- --------------------------------------------------------
 
@@ -164,17 +128,6 @@ CREATE TABLE `user` (
   `password` varchar(255) NOT NULL,
   `is_staff` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `institute`, `email`, `password`, `is_staff`) VALUES
-(1, 'Whitney ', 'Strong', 'TU', 'test@gmail.com', '2222222', 0),
-(2, 'Zelma ', 'Gardner', 'CU', 's@gmail.com', 'b59c67bf196a4758191e42f76670ceba', 0),
-(3, 'Gina ', 'Aguirre', 'TU', 'w@gmail.com', '934b535800b1cba8f96a5d72f72f1611', 0),
-(4, 'David ', 'Hale', 'TU', 'e@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0),
-(5, 'Penelope ', 'Choi', 'CU', 't@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0);
 
 -- --------------------------------------------------------
 
@@ -254,40 +207,34 @@ ALTER TABLE `user_has_research`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `booking_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `booking_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `hotel`
 --
 ALTER TABLE `hotel`
-  MODIFY `hotel_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `hotel_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `register_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `research`
---
-ALTER TABLE `research`
-  MODIFY `research_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `register_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
-  MODIFY `room_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `room_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- AUTO_INCREMENT for table `user_has_research`
+--
+ALTER TABLE `user_has_research`
+  MODIFY `research_id` int(10) NOT NULL AUTO_INCREMENT;
