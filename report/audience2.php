@@ -21,7 +21,7 @@ $arrRecord = mysqli_fetch_array($dbRecords);
     fwrite($fileTextFile1, ",");
     fwrite($fileTextFile1, $arrRecord[lastname]);
     fwrite($fileTextFile1, ",");
-    fwrite($fileTextFile1, $arrRecord[institue]);
+    fwrite($fileTextFile1, $arrRecord[institute]);
     fwrite($fileTextFile1, "\r\n");
     $sum=$sum+1;
 }
