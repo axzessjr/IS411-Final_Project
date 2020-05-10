@@ -158,6 +158,15 @@
     } 
     th, td:hover {
     background-color: grey;  }
+	
+  .boatbusbts{
+    background-color:  #fffaf3;
+    text-align: center;
+    padding: 10px;
+    margin-left:auto; 
+    margin-right:auto;
+    font-weight: bold
+    } 
 
 </style>
 
@@ -167,7 +176,7 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="homepage.php"><span>Academic Seminar</span></a></h1>
+        <h1 class="text-light"><a href="index.php"><span>Academic Seminar</span></a></h1>
       </div>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
