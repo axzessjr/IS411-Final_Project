@@ -1,4 +1,4 @@
-<?
+<?php
     session_start();
     if (!isset($_SESSION['email'])) {
         $_SESSION['msg'] = "You must log in first";
@@ -12,7 +12,7 @@
     <select name="reg_type" onchange="showfee(this.value)">
         <option value=''>Select your register type</option>
         
-    <?
+    <?php
         $sql = "SELECT * FROM register_type";
         $query_regtype = mysqli_query($connect,$sql);
         $numrows = mysqli_num_rows($query_regtype);
