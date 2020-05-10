@@ -71,37 +71,14 @@
 <div class="online_submission_form">
     
     
-
-    <form method="post" action="online_submission.php" enctype="multipart/form-data">
+        <?php 
     
-        
-        <label> Track :  </label> 
-            <select name="track" class="form-control" required="required">
-                <option value="">Please selected</option>
-                <option value="Science and Technology">Science and Technology</option>
-                <option value="AI and Machine Learning">AI and Machine Learning</option>
-                <option value="Economics">Economics</option>
-                <option value="Business">Business</option>
-            </select><br>
-        
-        
-        <label>Title : </label> <br>
-        
-        <textarea name="title" class="form-control" rows="4" cols="50" required="required"></textarea> <br>
-        
-        
-        
-        <label>Upload Research File : </label> <br>
-        
-        <input type="file" name="file" class="form-control" required="required">
-        
-        <hr>
     
-        <input type="submit" name="submit" class="btn btn-primary btn-block" value="Submit" ><br>
-        <input type='reset' class="btn btn-outline-primary btn-block" value='clear'>
-   
+            include "upload_research.php"; 
     
-    </form>
+    
+    
+        ?>
     
     
 </div> 
@@ -137,6 +114,36 @@
         $status = "pending";
         
         $user_id = $_SESSION["user_id"];
+        $research_id;
+        
+        $sql1 = "INSERT INTO user_has_research (user_id)
+        
+                 VALUES ('$user_id')";
+        
+        mysqli_query($connect, $sql1) or die("SQL errors " . mysqli_error($connect));
+        
+        
+        $sql2 = "SELECT research_id FROM user_has_research
+        
+                 WHERE user_id = '$user_id'";
+        
+        $select_id = mysqli_query($connect, $sql2) or die("SQL errors " . mysqli_error($connect));
+        
+        
+        while ($arrRecords = mysqli_fetch_array($select_id)) {
+
+                     $research_id = $arrRecords["research_id"];
+
+        }
+        
+        
+        $sql3 = "INSERT INTO research (research_id, title, track, file_path, status) 
+                    
+                 VALUES ('$research_id' ,'$title', '$track', '$file_path', 'pending')";
+            
+        mysqli_query($connect, $sql3) or die("SQL errors " . mysqli_error($connect));
+        
+   
         
         
     }
