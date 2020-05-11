@@ -1,10 +1,10 @@
 <?php
 include "connectdb.php";
 
-if (!file_exists("report/audience1.csv"))
-    $fileTextFile1 = fopen ("report/audience1.csv",'w');
+if (!file_exists("../report/audience1.csv"))
+    $fileTextFile1 = fopen ("../report/audience1.csv",'w');
 else
-    $fileTextFile1 = fopen ("report/audience1.csv",'a');
+    $fileTextFile1 = fopen ("../report/audience1.csv",'a');
 
 fwrite($fileTextFile1,"Audience\r\n");
 fwrite($fileTextFile1,"Register Type: Early bird with workshops\r\n");
@@ -36,9 +36,9 @@ if (!fclose($fileTextFile1))
 
 
 if (!file_exists("report/audience2.csv"))
-    $fileTextFile2 = fopen ("report/audience2.csv",'w');
+    $fileTextFile2 = fopen ("../report/audience2.csv",'w');
 else
-    $fileTextFile2 = fopen ("report/audience2.csv",'a');
+    $fileTextFile2 = fopen ("../report/audience2.csv",'a');
 
 fwrite($fileTextFile2,"Audience\r\n");
 fwrite($fileTextFile2,"Register Type: Early bird without workshops\r\n");
@@ -69,10 +69,10 @@ if (!fclose($fileTextFile2))
     echo "<p>Error closing file!</p>";    
 
 
-if (!file_exists("report/audience3.csv"))
-    $fileTextFile3 = fopen ("report/audience3.csv",'w');
+if (!file_exists("../report/audience3.csv"))
+    $fileTextFile3 = fopen ("../report/audience3.csv",'w');
 else
-    $fileTextFile3 = fopen ("report/audience3.csv",'a');
+    $fileTextFile3 = fopen ("../report/audience3.csv",'a');
 
 fwrite($fileTextFile3,"Audience\r\n");
 fwrite($fileTextFile3,"Register Type: Standard with workshops\r\n");
