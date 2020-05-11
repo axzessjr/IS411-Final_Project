@@ -13,14 +13,18 @@
 
     while ($arrRecords = mysqli_fetch_array($query)) {
             $_SESSION['reg_id'] = $arrRecords["register_id"];
+            session_write_close();
         }
 
     if (!isset($_SESSION['reg_id'])) {
-            echo "<script> alert('You must register'); </script>";
+            echo "<script> alert('You must to register'); </script>";
 
             echo "<script> location.href = 'reg_seminar.php'; </script>";
         }
-      
+    
+echo "test";
+echo $_SESSION['reg_id'];
+    
 ?>
     <?php include "header.php" ?>
     <div class="login-form">
@@ -37,7 +41,7 @@
                     <option value="Twin">Twin</option>
                   </select><br/>
         Brakefast : <INPUT TYPE="radio" NAME="r1" value='1'> Yes <INPUT TYPE="radio" NAME="r1" value='0'> No<br/><br/>
-        Room reserve : <INPUT TYPE="number" NAME="room_counts" class="form-control"><br/>
+        Room reserve : <INPUT TYPE="number" NAME="room_counts" min="1" class="form-control"><br/>
         
         <INPUT TYPE="submit" name='submit' class="btn btn-primary btn-block">
     </form>
