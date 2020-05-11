@@ -73,6 +73,8 @@
     
         <?php 
     
+            $sql = "SELECT * FROM user_has_research WHERE email = '$email' AND password = '$password'";
+    
     
             include "upload_research.php"; 
     
