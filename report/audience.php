@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../connectdb.php";
 
 date_default_timezone_set("Asia/Bangkok");
 $arrdate=getdate();
