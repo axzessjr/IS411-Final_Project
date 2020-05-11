@@ -42,7 +42,7 @@ if (!fclose($fileTextFile1))
     echo "<p>Error closing file!</p>";
 
 
-if (!file_exists("report/audience2.csv"))
+if (!file_exists("../report/audience2.csv"))
     $fileTextFile2 = fopen ("../report/audience2.csv",'w');
 else
     $fileTextFile2 = fopen ("../report/audience2.csv",'a');
