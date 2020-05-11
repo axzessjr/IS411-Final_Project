@@ -38,7 +38,7 @@ echo $_SESSION['reg_id'];
                     <option value="Twin">Twin</option>
                   </select><br/>
         Brakefast : <INPUT TYPE="radio" NAME="r1" value='1'> Yes <INPUT TYPE="radio" NAME="r1" value='0'> No<br/><br/>
-        Room reserve : <INPUT TYPE="number" NAME="room_counts" class="form-control"><br/>
+        Room reserve : <INPUT TYPE="number" min = '1' NAME="room_counts" class="form-control"><br/>
         
         <INPUT TYPE="submit" name='submit' class="btn btn-primary btn-block">
     </form>
