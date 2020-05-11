@@ -35,11 +35,11 @@
                     
                     VALUES ('$firstname', '$lastname', '$institute', '$email', '$password', '$staff')";
             
-            mysqli_query($connect, $sql) or die("SQL errors " . mysqli_error($connect));
+            mysqli_query($connect, $sql) or die("SQL errors :" . mysqli_error($connect));
             
              $sql1 = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
                 
-             $check = mysqli_query($connect, $sql1) or die("SQL errors " . mysqli_error($connect));;
+             $check = mysqli_query($connect, $sql1) or die("SQL errors :" . mysqli_error($connect));;
             
             
             $_SESSION['email'] = $email;

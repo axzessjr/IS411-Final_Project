@@ -22,9 +22,8 @@
     $_SESSION["email"];
     $_SESSION["institute"];
     $_SESSION["is_staff"];
-
     $_SESSION["attendance_type"];
-
+    $_SESSION["register_id"];
     $_SESSION['error'];
     
     

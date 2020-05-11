@@ -8,13 +8,13 @@
 <?php include "header.php" ?>
 <?php
 
-$register_id = $_GET['register_id'];
+$register_id = $_SESSION['register_id'];
 
 include_once("connectdb.php");
 
 $sql = "SELECT * FROM booking WHERE register_id = '$register_id'";
-$dbselect = mysqli_query($connect, $sql)
-    or die("Problem reading table: " . mysqli_error($connect));
+
+$dbselect = mysqli_query($connect, $sql) or die("SQL Errors: " . mysqli_error($connect));
 ?>
 <div><br>
 <?php   

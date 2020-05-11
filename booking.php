@@ -23,7 +23,7 @@ $sql1 = "SELECT * FROM user, register WHERE user.user_id = register.user_id AND 
 $query = mysqli_query($connect, $sql1); 
 
  while ($arrRecords = mysqli_fetch_array($query)) {
-             $_SESSION['reg_id'] = $arrRecords["register_id"];
+             $_SESSION['register_id'] = $arrRecords["register_id"];
       }
 
 //variable
@@ -33,8 +33,10 @@ $room_type = $_GET['room_type'];
 $bed_type = $_GET['bed_type'];
 $brakefast = $_GET['r1'];
 $room_counts = $_GET['room_counts'];
-$register_id = $_SESSION['reg_id'];
+$register_id = $_SESSION['register_id'];
 $hotel_id = '1';
+    
+$room_number = "R-" . rand(10,1000);    
 
 
 //insert booking
@@ -47,7 +49,7 @@ $sql = "INSERT INTO booking (register_id, hotel_id, firstname, lastname, room_co
     or die("Problem reading table: " . mysqli_error($connect));
 
 //insert room
-$sql1 = "INSERT INTO room (room_type, bed_type, hotel_id) VALUES ( '$room_type','$bed_type' ,'$hotel_id')";
+$sql1 = "INSERT INTO room (room_number, room_type, bed_type, hotel_id) VALUES ('$room_number', '$room_type','$bed_type' ,'$hotel_id')";
 
 $dbInsert1 = mysqli_query($connect, $sql1)
     or die("Problem reading table: " . mysqli_error($connect));
