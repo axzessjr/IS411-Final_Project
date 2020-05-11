@@ -15,6 +15,7 @@ else
 fwrite($fileTextFile1,"Audience\r\n");
 fwrite($fileTextFile1,"Register Type: Early bird with workshops\r\n");
 fwrite($fileTextFile1,"As of $day $month $year");
+fwrite($fileTextFile1,"\r\n");
 fwrite($fileTextFile1,"UserID,Firstname,Lastname,Institue\r\n");
 
 $SQL = "SELECT * FROM user,register WHERE user.user_id = register.user_id AND attendance_type = 'audience' AND register_type ='Early bird with workshops'";
@@ -50,6 +51,7 @@ else
 fwrite($fileTextFile2,"Audience\r\n");
 fwrite($fileTextFile2,"Register Type: Early bird without workshops\r\n");
 fwrite($fileTextFile2,"As of $day $month $year");
+fwrite($fileTextFile2,"\r\n");
 fwrite($fileTextFile2,"UserID,Firstname,Lastname,Institue\r\n");
 
 $SQL2 = "SELECT * FROM user,register WHERE user.user_id = register.user_id AND attendance_type = 'audience' AND register_type ='Early bird without workshops'"; 
@@ -85,6 +87,7 @@ else
 fwrite($fileTextFile3,"Audience\r\n");
 fwrite($fileTextFile3,"Register Type: Standard with workshops\r\n");
 fwrite($fileTextFile3,"As of $day $month $year");
+fwrite($fileTextFile3,"\r\n");
 fwrite($fileTextFile3,"UserID,Firstname,Lastname,Institue\r\n");
 
 $SQL3 = "SELECT * FROM user,register WHERE user.user_id = register.user_id AND attendance_type = 'audience' AND register_type ='Standard with workshops'"; 
