@@ -160,6 +160,11 @@
             
         mysqli_query($connect, $sql3) or die("SQL errors " . mysqli_error($connect));
         
+        
+        echo "<script> alert('Congratulation! your research has been added. Wait for admin to accept your work.); </script>";
+
+        echo "<script> location.href = 'online_submission.php'; </script>";
+        
    
         
         
