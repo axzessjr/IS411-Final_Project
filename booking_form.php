@@ -20,10 +20,7 @@
 
             echo "<script> location.href = 'reg_seminar.php'; </script>";
         }
-    
-echo "test";
-echo $_SESSION['reg_id'];
-    
+      
 ?>
     <?php include "header.php" ?>
     <div class="login-form">
