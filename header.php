@@ -200,6 +200,14 @@
     margin-right:auto;
     text-align: center;
     } 
+    
+    .dropdown-menu {
+        
+        background-color: black;
+        
+        
+    }    
+    
 
 </style>
 
@@ -216,8 +224,18 @@
           <li class="active"><a href="index.php">Home</a></li>
           
             <li><a href=''>About</a></li>
-          
-            <li><a href="">Hotels and Accommodations</a></li>
+            
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Hotels and Accommodations
+                </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="booking_form.php">Hotel Booking</a>
+                <a class="dropdown-item" href="view_hotel.php">Booking History</a>
+                <a class="dropdown-item" href="bts.php">How to get</a>
+            </div>
+           </li>
             
             <?php
             
