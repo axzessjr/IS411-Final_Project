@@ -11,7 +11,8 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Welcome To Our Website</h2>
-                <p class="animated fadeInUp">งานประชุมสัมมนาวิชาการ "งานสัมนาวิชาการสุดยอดงานวิจัยดีเด่นแห่งประเทศไทย" ประจำปี 2563</p>
+                <p class="animated fadeInUp">
+                        Academic Conference "Academic seminar, outstanding research of Thailand", year 2020</p>
               </div>
             </div>
           </div>
@@ -44,7 +45,7 @@
           <div class="carousel-item active" style="background: url(img/register.jpg);">
             <div class="carousel-container">
               <div id="research" class="carousel-content">
-                <h2 class="animated fadeInDown">Attend for an Academic Seminar.</h2>
+                <h2 class="animated fadeInDown">Attend for an Academic Seminar</h2>
                 <p class="animated fadeInUp">Register today for getting a discount from 2,000 THB with special price 1,500 THB</p>
                 <div>
                   <a href="reg_seminar.php" class="btn-menu animated fadeIn scrollto">Register</a>
