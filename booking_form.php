@@ -3,7 +3,25 @@
     if (!isset($_SESSION['email'])) {
         $_SESSION['msg'] = "You must log in first";
         header('location: login.php');
+
+        //connectdb
+        include_once("connectdb.php");
+
+        $sql1 = "SELECT * FROM user, register WHERE user.user_id = register.user_id AND email = '$_SESSION[email]'";
+        $query = mysqli_query($connect, $sql1); 
+
+        while ($arrRecords = mysqli_fetch_array($query)) {
+             $_SESSION['reg_id'] = $arrRecords["register_id"];
+        }
+
+        if (!isset($_SESSION['reg_id'])) {
+            $_SESSION['msg'] = "You must to register first";
+            header('location: reg_seminar.php');
+        }
     }
+echo "test";
+echo $_SESSION['reg_id'];
+    
 ?>
     <?php include "header.php" ?>
     <div class="login-form">
@@ -19,8 +37,8 @@
                     <option value="Single">Single</option>
                     <option value="Twin">Twin</option>
                   </select><br/>
-        Brakefast : <INPUT TYPE="radio" NAME="r1" value='1'> Yes <INPUT TYPE="radio" NAME="r1" value='0'> No<br/>
-        Room reserve : <INPUT TYPE="number" NAME="room_counts" class="form-control"><br/>
+        Brakefast : <INPUT TYPE="radio" NAME="r1" value='1'> Yes <INPUT TYPE="radio" NAME="r1" value='0'> No<br/><br/>
+        Room reserve : <INPUT TYPE="number" min = '1' NAME="room_counts" class="form-control"><br/>
         
         <INPUT TYPE="submit" name='submit' class="btn btn-primary btn-block">
     </form>
