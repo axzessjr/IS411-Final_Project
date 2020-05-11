@@ -16,14 +16,11 @@
         }
 
     if (!isset($_SESSION['reg_id'])) {
-            echo "<script> alert('You must to register'); </script>";
+            echo "<script> alert('You must register'); </script>";
 
             echo "<script> location.href = 'reg_seminar.php'; </script>";
         }
-    
-echo "test";
-echo $_SESSION['reg_id'];
-    
+      
 ?>
     <?php include "header.php" ?>
     <div class="login-form">
