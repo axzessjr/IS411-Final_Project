@@ -5,10 +5,17 @@ if (!file_exists("../report/researcher.csv"))
 else
     $fileTextFile1 = fopen ("../report/researcher.csv",'a');
 
+date_default_timezone_set("Asia/Bangkok");
+$arrdate=getdate();
+$day=$arrdate["mday"];
+$month=$arrdate["month"];
+$year=$arrdate["year"];
+
 fwrite($fileTextFile1,"Researcher\r\n");
+fwrite($fileTextFile1,"As of $day $month $year");
 fwrite($fileTextFile1,"UserID,Firstname,Lastname,Institue\r\n");
    
-include "connectdb.php";
+include "../connectdb.php";
 $SQL = "SELECT * FROM user,register WHERE user.user_id = register.user_id AND attendance_type = 'researcher'"; 
 $dbRecords = mysqli_query($connect,$SQL);
 $numrows = mysqli_num_rows($dbRecords);
