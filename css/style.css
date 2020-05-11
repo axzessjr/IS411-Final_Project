@@ -295,6 +295,9 @@ body {
     background: #ffb03b;
     color: #ffffff;
   }
+
+  #hero .carousel-content a{
+    font-size: 40px}
   
   /*--------------------------------------------------------------
   # Sections General
