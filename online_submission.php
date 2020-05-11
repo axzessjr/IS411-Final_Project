@@ -73,10 +73,25 @@
     
         <?php 
     
-            $sql = "SELECT * FROM user_has_research WHERE email = '$email' AND password = '$password'";
+            $sql = "SELECT * FROM user_has_research WHERE user_id = '$_SESSION[user_id]'";
+    
+            $check = mysqli_query($connect, $sql);
+            $numrows = mysqli_num_rows($check);
+
+
+            if ($numrows == 1) { 
+         
+                include "track_research.php";
+                
+         
+            } else {
+                
+                include "upload_research.php"; 
+                
+            }
     
     
-            include "upload_research.php"; 
+            
     
     
     
