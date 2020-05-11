@@ -39,7 +39,7 @@
     ?>
     </select><br><br>
     <!-- fee show here -->
-    <p class="badge badge-primary" id="txtHint">Fee will show here...</p><br>
+    <div id="txtHint">Fee will show here...</div><br>
     
     <labeL>Choose your attendace type :</labeL><br>
         <label><input type="radio" name="attendance_type" value="Researcher" required="required"> &nbsp Researcher</label> &nbsp&nbsp&nbsp
