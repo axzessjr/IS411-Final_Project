@@ -13,6 +13,7 @@ $year=$arrdate["year"];
 
 fwrite($fileTextFile1,"Researcher\r\n");
 fwrite($fileTextFile1,"As of $day $month $year");
+fwrite($fileTextFile1,"\r\n");
 fwrite($fileTextFile1,"UserID,Firstname,Lastname,Institue\r\n");
    
 include "../connectdb.php";
