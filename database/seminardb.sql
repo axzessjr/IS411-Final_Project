@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 10, 2020 at 09:35 PM
+-- Generation Time: May 11, 2020 at 04:19 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -30,6 +30,7 @@ CREATE TABLE `booking` (
   `breakfast_included` tinyint(1) NOT NULL,
   `booking_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 -- --------------------------------------------------------
 
@@ -63,6 +64,8 @@ CREATE TABLE `register` (
   `attendance_type` varchar(255) NOT NULL,
   `register_type` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 
 -- --------------------------------------------------------
 
@@ -99,6 +102,8 @@ CREATE TABLE `research` (
   `status` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+
 -- --------------------------------------------------------
 
 --
@@ -107,11 +112,12 @@ CREATE TABLE `research` (
 
 CREATE TABLE `room` (
   `room_id` int(10) NOT NULL,
-  `room_number` int(10) NOT NULL,
+  `room_number` varchar(10) NOT NULL,
   `room_type` varchar(255) NOT NULL,
   `bed_type` varchar(255) NOT NULL,
   `hotel_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 -- --------------------------------------------------------
 
@@ -129,6 +135,8 @@ CREATE TABLE `user` (
   `is_staff` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+
 -- --------------------------------------------------------
 
 --
@@ -139,6 +147,8 @@ CREATE TABLE `user_has_research` (
   `user_id` int(10) NOT NULL,
   `research_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 
 --
 -- Indexes for dumped tables
