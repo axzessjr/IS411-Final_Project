@@ -3,8 +3,10 @@
 <head>
     <title>booking</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<?php include "header.php" ?>
 <?php
     session_start();
     if (!isset($_SESSION['email'])) {
@@ -52,15 +54,16 @@ $dbInsert1 = mysqli_query($connect, $sql1)
 
 //insert result
 if($dbInsert1 && $dbInsert){
-    echo "Insert successful ";
-    echo "<a href='index.php' class='w3-button w3-black'>กลับสู่หน้าหลัก</a>";
+    echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>You successfully created your booking</div></br>";
+    echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
 else {
-    echo "Insert not successful ";
-    echo "<a href='index.php' class='w3-button w3-black'>จองที่พักใหม่</a>";
+    echo "</br></br></br></br><div class='alert alert-danger'><strong><h3>Danger!</h3></strong> Your booking is not successful</div></br>";
+    echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Try Again</a></div>";
 }
 
 
 ?>
+<?php include "footer.php" ?>
 </body>
 </html>
