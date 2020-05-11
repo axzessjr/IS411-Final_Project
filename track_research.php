@@ -40,15 +40,28 @@
         ?>
 
     <form method="post" action="online_submission.php" enctype="multipart/form-data">
+        
+        <p>Your research has been submitted. <br>Wait for admin to accept your work.</p>
+        
+        
+        <div class="alert alert-warning" role="alert">
+  
+            <label> <b>Status : </b><?php echo $status; ?> </label> 
+            
+        </div>
+        
+        <hr>
     
         
-        <label> Title : <?php echo $title; ?> </label><br>
+        <label> <b>Title : </b><?php echo $title; ?> </label><br>
         
-        <label> Track : <?php echo $track; ?> </label><br>
+        <label> <b>Track : </b><?php echo $track; ?> </label><br>
         
-        <label> Uploaded time : <?php echo $date; ?> </label><br>
+        <label> <b>Uploaded time : </b><?php echo $date; ?> </label><br>
         
-        <label> Status : <?php echo $status; ?> </label> 
+        
+        
+        
            
    
     

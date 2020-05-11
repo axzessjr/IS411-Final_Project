@@ -12,18 +12,16 @@
     $query = mysqli_query($connect, $sql1); 
 
     while ($arrRecords = mysqli_fetch_array($query)) {
-            $_SESSION['reg_id'] = $arrRecords["register_id"];
+            $_SESSION['register_id'] = $arrRecords["register_id"];
             session_write_close();
         }
 
-    if (!isset($_SESSION['reg_id'])) {
+    if (!isset($_SESSION['register_id'])) {
             echo "<script> alert('You must to register'); </script>";
 
             echo "<script> location.href = 'reg_seminar.php'; </script>";
         }
-    
-echo "test";
-echo $_SESSION['reg_id'];
+
     
 ?>
     <?php include "header.php" ?>
