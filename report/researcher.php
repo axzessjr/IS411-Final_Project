@@ -1,9 +1,9 @@
 <?php
     
-if (!file_exists("report/researcher.csv"))
-    $fileTextFile1 = fopen ("report/researcher.csv",'w');
+if (!file_exists("../report/researcher.csv"))
+    $fileTextFile1 = fopen ("../report/researcher.csv",'w');
 else
-    $fileTextFile1 = fopen ("report/researcher.csv",'a');
+    $fileTextFile1 = fopen ("../report/researcher.csv",'a');
 
 fwrite($fileTextFile1,"Researcher\r\n");
 fwrite($fileTextFile1,"UserID,Firstname,Lastname,Institue\r\n");
