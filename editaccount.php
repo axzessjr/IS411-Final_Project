@@ -17,7 +17,25 @@ th, td{
 <body>
 
 <div class="login-form"><br>
-<FORM METHOD="POST" ACTION="<?php echo$_SERVER['PHP_SELF']; ?>">
+<FORM METHOD="POST" ACTION="testedituser.php">
+<!-- notification error -->
+   <?php if (isset($_SESSION['error'])) : ?>
+     <h3>
+     <?php 
+     foreach($_SESSION['error'] as $error){ 
+                            
+     echo "
+	 <div class='alert alert-danger alert-dismissible fade show'>
+     <button type='button' class='close' data-dismiss='alert'>&times;</button> ";
+      echo "<strong>";
+      echo $error . "<br>";
+      echo " </strong> ";
+      echo "</div>";
+      }
+      unset($_SESSION['error']);
+      ?>
+      </h3>
+   <?php endif ?>
 <CENTER>
 <div style="width:300px;">
 
@@ -26,23 +44,31 @@ th, td{
 <TABLE>
 <TR>
 	<TD>First Name</TD>
-	<TD><INPUT TYPE="text" NAME="fname" VALUE="<?=$_GET[fname];?>" class="form-control"></TD>
+	<TD><INPUT TYPE="text" NAME="fname2" VALUE="<?=$_GET[fname];?>" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Last Name</TD>
-	<TD><INPUT TYPE="text" NAME="lname" VALUE="<?=$_GET[lname];?>" class="form-control"></TD>
+	<TD><INPUT TYPE="text" NAME="lname2" VALUE="<?=$_GET[lname];?>" class="form-control"></TD>
+</TR>
+<TR>
+	<TD>Institute</TD>
+	<TD><INPUT TYPE="text" NAME="ins2" VALUE="<?=$_GET[ins2];?>" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Email</TD>
-	<TD><INPUT TYPE="email" NAME="email" class="form-control"></TD>
+	<TD><INPUT TYPE="email" NAME="email" VALUE="<?=$_SESSION['email']?>" class="form-control" readonly></TD>
 </TR>
 <TR>
 	<TD>Password</TD>
-	<TD><INPUT TYPE="password" NAME="pw" class="form-control"></TD>
+	<TD><INPUT TYPE="password" NAME="pw2" class="form-control"></TD>
+</TR>
+<TR>
+	<TD>Repassword</TD>
+	<TD><INPUT TYPE="password" NAME="repw2" class="form-control"></TD>
 </TR>
 </TABLE> 
 <BR>
-	<INPUT TYPE="submit" NAME="submit" VALUE="Confirm" class="btn btn-primary btn-block">
+	<INPUT TYPE="submit" NAME="edit_user" VALUE="Confirm" class="btn btn-primary btn-block">
 
  
 </div>
