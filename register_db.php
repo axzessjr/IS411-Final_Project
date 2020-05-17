@@ -50,6 +50,7 @@
                      $_SESSION['firstname'] = $arrRecords["firstname"];
                      $_SESSION['lastname'] = $arrRecords["lastname"];
                      $_SESSION['institute'] = $arrRecords["institute"];
+                     $_SESSION['is_staff'] = $arrRecords["is_staff"];
 
 
               }
