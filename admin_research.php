@@ -41,13 +41,7 @@
               }
     
 
-          if ($_SESSION['attendance_type'] != "Researcher") {
-        
-                echo "<script> alert('You must attend a seminar as a Researcher!'); </script>";
 
-                echo "<script> location.href = 'index.php'; </script>";
-
-          }
     
     
         ?>
