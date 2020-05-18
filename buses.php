@@ -39,7 +39,7 @@ $(document).ready(function(){
 });
 </script>
 <div class= "boatbusbts">
-    <h3>งานสัมนาวิชาการสุดยอดงานวิจัยดีเด่นแห่งประเทศไทย ประจำปี 2563 <br><span style="color: cadetblue">#สัมมนา มธ.63</span></h3>
+    <h3>Academic research seminar of Thailand 2020 <br><span style="color: cadetblue">#TUseminar2020</span></h3>
 </div>
     
 <div class="container" style="margin-top:30px">
@@ -48,7 +48,7 @@ $(document).ready(function(){
       <h4>Google MAP</h4>
       <div>
       <iframe src="https://www.google.com/maps/d/embed?mid=16eXedhMZ3ZmsFICGE0-as9evLhmgcY6X" width="250" height="250"></iframe></div>
-      <h3 style="color: crimson">เดินทางโดย</h3>
+      <h3 style="color: crimson">How to get there :</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
           <a class="nav-link" data-toggle="pills" href="bts.php">BTS Skytrain</a>
@@ -64,38 +64,38 @@ $(document).ready(function(){
 </div>
 
 <div class="col-sm-8">
-  <h3 style="text-align: center">โดยสาร รถเมล์ประจำทาง</h3>
+  <h3 style="text-align: center">By Buses</h3>
     <div class="container">
-    <a target="_blank" href="img/tbs7.jpg">
-      <img src="img/tbs7.jpg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%">
+    <a target="_blank" href="img/busStop.jpeg.">
+      <img src="img/busStop.jpeg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%">
     </a>
     </div>
       <br>
     <div class="grid-container">
     <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
-    <div id="flip1">สายที่ผ่านสนามหลวง</div>
+    <div id="flip1">Bus route Sanamluang</div>
     </div>
-    <p id="panel1">สาย 19, 30, 32, 33, 53, 60, 70, 201, ปอ.32, ปอ.59, ปอ.สาย 3, ปอ.7, ปอ.สาย 80,ปอ.สาย 91, ปอ.503</p>
+    <p id="panel1">line 19, 30, 32, 33, 53, 60, 70, 201, ปอ.32, ปอ.59, ปอ.3, ปอ.7, ปอ.80,ปอ.91, ปอ.503</p>
     <div class="grid-container">
     <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
-    <div id="flip2">สายที่ผ่านท่าพระจันทร์</div>
+    <div id="flip2">Bus route Tha Phra Chan</div>
     </div>
-    <p id="panel2">สาย 32, 53, 124, 203, 201, ปอ.32, ปอ.524</p>
+    <p id="panel2">line 32, 53, 124, 203, 201, ปอ.32, ปอ.524</p>
     <div class="grid-container">
     <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
-    <div id="flip3">สายที่ผ่านท่าช้าง, วัดพระแก้วฯ</div>
+    <div id="flip3">Bus route Tha Chang, Wat Phra Kaew</div>
     </div>
-    <p id="panel3">สาย 32, 53, 124, 203, 201, ปอ.32, ปอ.524</p>
+    <p id="panel3">line 32, 53, 124, 203, 201, ปอ.32, ปอ.524</p>
     <div class="grid-container">
     <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
-    <div id="flip4">สายที่ผ่านโรงพยาบาลศิริราช</div>
+    <div id="flip4">Bus route Siriraj Hospital</div>
     </div>
-    <p id="panel4">สาย 19, 57, 81, 149, ปอ.91</p>
+    <p id="panel4">line 19, 57, 81, 149, ปอ.91</p>
     <div class="grid-container">
     <div><img src="img/bus1.png" alt="Siam Skytrain" height="30px" width="50px"></div>
-    <div id="flip5">สายที่ผ่านสะพานพระปิ่นเกล้า</div>
+    <div id="flip5">Bus route Phra Pinklao</div>
     </div>
-    <p id="panel5">สาย 124, 125, 127, 146, 149, 203, 516, ปอ.8, ปอ.47, ปอ.79</p>
+    <p id="panel5">line 124, 125, 127, 146, 149, 203, 516, ปอ.8, ปอ.47, ปอ.79</p>
     </div>
   </div>
 </div>
