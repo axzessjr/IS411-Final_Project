@@ -1,19 +1,6 @@
 
 
-<div class="login-form">
-<FORM action='admin_panel.php'>
-<B>Choose Audience Type :</B><HR>
 
-    <SELECT NAME="type">
-		<OPTION VALUE="t1" >Early bird with workshops</OPTION>
-        <OPTION VALUE="t2">Early bird without workshops</OPTION>
-		<OPTION VALUE="t3" >Standard with workshops</OPTION>
-    </SELECT>
-<br><br>
-<INPUT TYPE="submit" NAME="oksearch" value ="Search">
-<INPUT TYPE="submit" NAME="create" value ="Create">
-</FORM>
-</div>
 
 
 <?php
@@ -49,7 +36,7 @@
     </tr>";
     echo "</tr>";
     }
-    echo "</table>";
+    echo "</table><br>";
     echo "Number of Audience : ". $numrows;
     echo "</div>";
    
@@ -176,3 +163,20 @@ echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go 
     
     
     ?>
+
+<div class="login-form">
+<FORM action='admin_panel.php'>
+<B>Choose Audience Type :</B><HR>
+
+    <SELECT NAME="type">
+		<OPTION VALUE="t1" >Early bird with workshops</OPTION>
+        <OPTION VALUE="t2">Early bird without workshops</OPTION>
+		<OPTION VALUE="t3" >Standard with workshops</OPTION>
+    </SELECT>
+<br><br>
+<INPUT TYPE="submit" NAME="oksearch" value ="Search">
+<INPUT TYPE="submit" NAME="create" value ="Create">
+</FORM>
+</div>
+
+
