@@ -17,11 +17,11 @@
             </div>
           </div>
    
- <!--          <div class="carousel-item" style="background: url(img/place1.jpg);">
+<div class="carousel-item" style="background: url(img/place1.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Location</h2>
-                <p class="animated fadeInUp">หอประชุมใหญ่ของมหาวิทยาลัยธรรมศาสตร์ ท่าพระจันทร์ บรรจุผู้เข้าร่วมสัมนาได้ถึง 2,500 คน โดยแบ่งเป็นที่นั่งชั้นล่าง 1,800 ที่นั่ง และชั้นบน 700 ที่นั่ง</p>
+                <p class="animated fadeInUp">Grand Hall, Thammasat University (Tha Prachan)</br>2,500 seating capacity suitable for medium scale events, international concerts and Academic seminar</p>
                 <div>
                   <a href="#menu" class="btn-menu animated fadeIn scrollto">More details</a>
                 </div>
@@ -40,7 +40,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <div class="carousel-item active" style="background: url(img/register.jpg);">
             <div class="carousel-container">
@@ -175,7 +175,6 @@
       <div class="container-fluid">
         <div class="section-title">
           <h2>Seminar <span>Gallery</span></h2>
-          <p>รวมภาพบรรยากาศงานสัมมนาต่างๆที่ผ่านมา</p>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-4">
