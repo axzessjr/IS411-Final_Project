@@ -73,17 +73,17 @@
               <div class="section-title">
                 <h2>General <span>Information</span></h2>
               </div>
-              <p>Conference Name: งานสัมนาวิชาการสุดยอดงานวิจัยดีเด่นแห่งประเทศไทย<br>
-                 Conference Theme: งานวิจัยดีเด่น<br>
-                 Conference Dates: 10.00-16.00 น. 10 ตุลาคม 2563<br>
-                 Conference Location: หอประชุมใหญ่ของมหาวิทยาลัยธรรมศาสตร์ ท่าพระจันทร์<br>
-                 Hosted by: กระทรวงศึกษาธิการ<br>
-                 Language: ภาษาไทย<br>
-                 Registration Fee Per Person: 2000 บาท<br>
+              <p>Seminar Name: Academic seminar, outstanding research of Thailand<br>
+                 Seminar Theme: outstanding research<br>
+                 Seminar Dates: October 10,2020 at 10.00 a.m.-16.00 p.m. <br>
+                 Seminar Location: Grand Hall, Thammasat University (Tha Prachan)<br>
+                 Hosted by: Ministry of Education (Thailand)<br>
+                 Language: Thai<br>
+                 Registration Fee Per Person: 2000 THB<br>
               </p>
               <ul>
-                <li><i class="bx bx-check-double"></i>วัตถุประสงค์ของงาน เพื่อนำเสนอความรู้ในเรื่องต่าง ๆ ที่ได้จากงานวิจัยดีเด่นที่มีคุณภาพของประเทศไทยในปีนี้ ให้แก่ผู้ที่สนใจเข้าร่วมสัมมนา</li>
-                <li><i class="bx bx-check-double"></i>สมัครเข้าร่วมงานสัมนาวันนี้ได้ในราคาพิเศษจาก 2000 บาทเหลือเพียง<strong> 1499 </strong>บาท</li>
+                <li><i class="bx bx-check-double"></i><strong>Seminar Objective: </strong>to provide participants the knowledge and develop into the participants critical and analytical thinking skills.</li>
+                <li><i class="bx bx-check-double"></i>Register today for getting a discount from 2,000 THB with special price <strong> 1,500 </strong>THB</li>
               </ul>
             </div>
           </div>
