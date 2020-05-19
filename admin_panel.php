@@ -8,6 +8,14 @@
 
     } 
 
+    if ($_SESSION['is_staff']==0) {
+        
+        echo "<script> alert('You are not Admin!'); </script>";
+
+        echo "<script> location.href = 'index.php'; </script>";
+
+    } 
+
    
 ?>
 <?php include "header.php" ?>

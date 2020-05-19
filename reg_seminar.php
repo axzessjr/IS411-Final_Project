@@ -7,7 +7,15 @@
         echo "<script> location.href = 'login.php'; </script>";
 
     }
-    include("connectdb.php");
+
+    if (isset($_SESSION['register_id'])) {
+        
+        echo "<script> alert('You\'ve already attended as $_SESSION[attendance_type]'); </script>";
+
+        echo "<script> location.href = 'index.php'; </script>";
+
+    }
+    
 ?>
 
 
