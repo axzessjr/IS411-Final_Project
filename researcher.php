@@ -1,21 +1,11 @@
-<head>
-    <title>researcher</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="css/style.css" rel="stylesheet">
-</head>
+
 
 <?php
-    session_start();
-    if (!isset($_SESSION['email'])) {
-        $_SESSION['msg'] = "You must log in first";
-        header('location: login.php');
-    }
-
-include "header.php";
+  
 
     include "connectdb.php";
     echo "<div class = 'boatbusbts'>";
-    echo "<h3>Researcher Details</h3>";
+    echo "<h3>Researcher Details :</h3>";
     echo "<table border=1>";
     echo "<tr>
         <td><b> user_id </b></td>
@@ -36,10 +26,10 @@ include "header.php";
     </tr>";
     echo "</tr>";
     }
-    echo "</table>";
+    echo "</table> <br>";
     echo "Number of Researcher : ". $numrows;
     echo "</div>";
-    echo "<div class='boatbusbts'><a href='admin_panel.php' class='w3-button w3-black'>Go Back</a></div>";
+
 ?>
 <form class="login-form">
   <B>Create Researcher Report :</B>
@@ -89,6 +79,6 @@ if (!fclose($fileTextFile1))
 echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
 echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
-include "footer.php";
+
 ?>
 
