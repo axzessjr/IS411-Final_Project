@@ -9,11 +9,22 @@
         $password = $_POST['password'];
 
         $password = md5($password);
-        $sql1 = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
+        $sql1 = "SELECT * FROM user WHERE user.email = '$email' AND user.password = '$password'";
         $check = mysqli_query($connect, $sql1);
         $numrows = mysqli_num_rows($check);
 
         if ($numrows == 1) {
+            
+             /* $sql = "SELECT * FROM booking,  WHERE register_id = '$register_id'";
+
+              $check_register = mysqli_query($connect, $sql) or die("SQL Errors: " . mysqli_error($connect)); 
+            
+                while ($arrRecords = mysqli_fetch_array($check_register)) {
+
+                     $_SESSION['register_id'] = $arrRecords["register_id"];  
+
+              } */
+            
             
               $_SESSION['email'] = $email;
             

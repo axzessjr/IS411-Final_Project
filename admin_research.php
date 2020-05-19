@@ -9,6 +9,9 @@
 ?>    
     
     
+    
+        <h3>View Research :</h3> <hr>
+    
         <table>
                             <tr>
                                 <th>ID</th>
@@ -62,9 +65,7 @@
                                      
                                      mysqli_query($connect, $sql3) or die("SQL errors :" . mysqli_error($connect));
                                      
-                                     header('Location: admin_panel.php?research=');
-                                     
-                                     //echo "<script> location.href = 'admin_panel.php?research='; </script>";
+                                     echo "<script> location.href = 'admin_panel.php?'; </script>";
                                      
                                      
                                  }
