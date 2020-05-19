@@ -1,5 +1,5 @@
 <head>
-    <title>booking</title>
+    <title>researcher</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@ include "header.php";
 
     include "connectdb.php";
     echo "<div class = 'boatbusbts'>";
-    echo "<h3>Research Details</h3>";
+    echo "<h3>Researcher Details</h3>";
     echo "<table border=1>";
     echo "<tr>
         <td><b> user_id </b></td>
@@ -41,7 +41,10 @@ include "header.php";
     echo "</div>";
     echo "<div class='boatbusbts'><a href='form_BookingReservation.php' class='w3-button w3-black'>Go Back</a></div>";
 ?>
-                                                         
+<form class="login-form">
+  <B>Create Researcher Report :</B>
+ <INPUT TYPE="submit" NAME="create" value ="Create">
+</form>
 <?php  
 if (isset($_GET['create'])) {
 if (!file_exists("report/researcher.csv"))
@@ -88,3 +91,4 @@ echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go 
 }
 include "footer.php";
 ?>
+
