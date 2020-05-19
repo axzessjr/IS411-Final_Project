@@ -13,7 +13,6 @@
 
 include "header.php";
 
-if (isset($_GET['oksearch'])) {  
     include "connectdb.php";
     echo "<div class = 'boatbusbts'>";
     echo "<h3>Research Details</h3>";
@@ -41,10 +40,10 @@ if (isset($_GET['oksearch'])) {
     echo "Number of Researcher : ". $numrows;
     echo "</div>";
     echo "<div class='boatbusbts'><a href='form_BookingReservation.php' class='w3-button w3-black'>Go Back</a></div>";
-}
-
-  
-if (isset($_GET['okprint'])) {
+?>
+                                                         
+<?php  
+if (isset($_GET['create'])) {
 if (!file_exists("report/researcher.csv"))
     $fileTextFile1 = fopen ("report/researcher.csv",'w');
 else
@@ -87,6 +86,5 @@ if (!fclose($fileTextFile1))
 echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
 echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
-
 include "footer.php";
 ?>
