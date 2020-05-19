@@ -39,7 +39,7 @@ include "header.php";
     echo "</table>";
     echo "Number of Researcher : ". $numrows;
     echo "</div>";
-    echo "<div class='boatbusbts'><a href='form_BookingReservation.php' class='w3-button w3-black'>Go Back</a></div>";
+    echo "<div class='boatbusbts'><a href='admin_panel.php' class='w3-button w3-black'>Go Back</a></div>";
 ?>
 <form class="login-form">
   <B>Create Researcher Report :</B>

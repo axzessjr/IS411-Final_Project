@@ -15,7 +15,6 @@
 
 <div class="login-form">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <form action="reg_seminar_db.php" method="POST">
     
     <h2 class="text-center">Register</h2><hr>
