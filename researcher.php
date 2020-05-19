@@ -1,5 +1,5 @@
 <head>
-    <title>booking</title>
+    <title>researcher</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,10 +13,9 @@
 
 include "header.php";
 
-if (isset($_GET['oksearch'])) {  
     include "connectdb.php";
     echo "<div class = 'boatbusbts'>";
-    echo "<h3>Research Details</h3>";
+    echo "<h3>Researcher Details</h3>";
     echo "<table border=1>";
     echo "<tr>
         <td><b> user_id </b></td>
@@ -41,10 +40,13 @@ if (isset($_GET['oksearch'])) {
     echo "Number of Researcher : ". $numrows;
     echo "</div>";
     echo "<div class='boatbusbts'><a href='form_BookingReservation.php' class='w3-button w3-black'>Go Back</a></div>";
-}
-
-  
-if (isset($_GET['okprint'])) {
+?>
+<form class="login-form">
+  <B>Create Researcher Report :</B>
+ <INPUT TYPE="submit" NAME="create" value ="Create">
+</form>
+<?php  
+if (isset($_GET['create'])) {
 if (!file_exists("report/researcher.csv"))
     $fileTextFile1 = fopen ("report/researcher.csv",'w');
 else
@@ -87,6 +89,6 @@ if (!fclose($fileTextFile1))
 echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
 echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
-
 include "footer.php";
 ?>
+

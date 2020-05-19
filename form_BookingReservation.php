@@ -26,7 +26,7 @@
 
 
 <br><INPUT TYPE="submit" NAME="oksearch" value ="Search" class="btn btn-primary>
-<INPUT TYPE="submit" NAME="okprint" value ="Save Report" class="btn btn-primary>
+<INPUT TYPE="submit" NAME="okprint" value ="Create Report" class="btn btn-primary>
 </FORM><HR>
 </div>
 
