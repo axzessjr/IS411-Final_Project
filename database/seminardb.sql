@@ -50,7 +50,7 @@ CREATE TABLE `hotel` (
 --
 
 INSERT INTO `hotel` (`hotel_id`, `hotel_name`, `hotel_address`, `hotel_contact`) VALUES
-(2, 'CENTARA GRAND', '999/99 Rama 1 Road, Pathumwan, Bangkok 10330, Thailand', '+66 (0) 2100 1234');
+(1, 'CENTARA GRAND', '999/99 Rama 1 Road, Pathumwan, Bangkok 10330, Thailand', '+66 (0) 2100 1234');
 
 -- --------------------------------------------------------
 
