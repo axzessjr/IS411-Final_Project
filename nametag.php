@@ -94,7 +94,7 @@ if (isset($_GET['oksubmit'])) {
     }
     else
     echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
-    echo "<div class='boatbusbts'><a href='form_nametag.php' class='w3-button w3-black'>Go Back</a>  <a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
+    echo "<div class='boatbusbts'><a href='admin_panel.php' class='w3-button w3-black'>Go Back</a>  <a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
 
 ?>
