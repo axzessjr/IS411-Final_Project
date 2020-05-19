@@ -27,9 +27,24 @@
 
               }
             
-            echo "<script> alert('You are logging in.'); </script>";
+            
+            
+            if($_SESSION['is_staff'] == 0){
 
+            echo "<script> alert('You are logging in.'); </script>";    
+                
             echo "<script> location.href = 'index.php'; </script>";
+                
+            }
+            
+            if($_SESSION['is_staff'] == 1){
+                
+            echo "<script> alert('You are logging in as Admin.'); </script>";    
+
+            echo "<script> location.href = 'admin_panel.php'; </script>";
+                
+            }
+                
         
         } else {
             $_SESSION['error'] = "Wrong Email or password Login failed";

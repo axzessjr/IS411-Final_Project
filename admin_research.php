@@ -1,6 +1,14 @@
-<form method="post" action="admin_research.php">
+<form method="post" action="admin_panel.php">
     
-        
+        <?php
+
+    $sql1 = "SELECT * FROM research";
+            
+    $query1 = mysqli_query($connect, $sql1) or die("SQL errors :" . mysqli_error($connect));
+
+?>    
+    
+    
         <table>
                             <tr>
                                 <th>ID</th>
@@ -26,7 +34,7 @@
                                             <td>$arrRecords[track]</td>
                                             <td><a href='$arrRecords[file_path]'>$arrRecords[file_path]</a></td>
                                             <td>$arrRecords[upload_date]</td>
-                                            <td>$arrRecords[status]</td>
+                                            <td>\"$arrRecords[status]\"</td>
                                             <td><button type='submit' name='approve$arrRecords[research_id]' class='btn btn-success'>Approve</button></td>
                                             <td><button type='submit' name='reject$arrRecords[research_id]' class='btn btn-danger'>Reject</button></td>
                                         </tr>
@@ -42,7 +50,7 @@
                                      
                                      mysqli_query($connect, $sql2) or die("SQL errors :" . mysqli_error($connect));
                                      
-                                     echo "<script> location.href = 'admin_research.php'; </script>";
+                                     echo "<script> location.href = 'admin_panel.php'; </script>";
                                      
                                      
                                  }
@@ -54,7 +62,9 @@
                                      
                                      mysqli_query($connect, $sql3) or die("SQL errors :" . mysqli_error($connect));
                                      
-                                     echo "<script> location.href = 'admin_research.php'; </script>";
+                                     header('Location: admin_panel.php?research=');
+                                     
+                                     //echo "<script> location.href = 'admin_panel.php?research='; </script>";
                                      
                                      
                                  }
