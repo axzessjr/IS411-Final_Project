@@ -7,7 +7,7 @@
         <a href="" class="phone"><i class="fas fa-phone"></i></a>
         <a href="" class="lie"><i class="fab fa-line"></i></a>
         <p align="right">
-            <button style='font-size:13px'> <a href="admin_login.php">Admin </a> <i class='fas fa-key'></i></button>
+            <button style='font-size:13px'> <a href="admin_panel.php">Admin </a> <i class='fas fa-key'></i></button>
         </p>
       </div>
     </div>
