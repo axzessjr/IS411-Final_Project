@@ -15,11 +15,12 @@
 <br>
 
 <div class="row">
+    
     <div class="col-md-2">
 
         <div class="online_submission_panel">
 
-    <div class="online_submission_form">
+            <div class="online_submission_form">
             
         <?php 
     
@@ -56,8 +57,6 @@
     
 </div>    
 
-
-   
         <div class="online_submission_form" style="width: 250px;">
         
         
@@ -89,7 +88,7 @@
     
             </div>
         
-            </div>
+            </div><br>
             
               <div class="btn-group">
             <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
