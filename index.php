@@ -22,9 +22,6 @@
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Location</h2>
                 <p class="animated fadeInUp">Grand Hall, Thammasat University (Tha Prachan)</br>2,500 seating capacity suitable for medium scale events, international concerts and Academic seminar</p>
-                <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">More details</a>
-                </div>
               </div>
             </div>
           </div> 
@@ -34,10 +31,6 @@
               <div id="research" class="carousel-content">
                 <h2 class="animated fadeInDown">The best research of the year!</h2>
                 <p class="animated fadeInUp">งานวิจัยเกี่ยวกับสัญญาพาณิชย์อิเล็กทรอนิกส์ และการคุ้มครองผู้บริโภคในการทำสัญญาพาณิชย์อิเล็กทรอนิกส์ โดยศูนย์กฎหมายเทคโนโลยีสารสนเทศและการสื่อสาร<br><br><img src="img/research1.jpg" alt="research1" width= 20% height= 20%>&nbsp<img src="img/research2.jpg" alt="research2" width= 20% height= 20%></p>
-                <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">More details</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Other research</a>
-                </div>
               </div>
             </div>
           </div>
