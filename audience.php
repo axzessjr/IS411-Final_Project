@@ -41,10 +41,10 @@ if (isset($_GET['oksearch'])) {
     echo "</table>";
     echo "Number of Audience : ". $numrows;
     echo "</div>";
-    echo "<div class='boatbusbts'><a href='form_BookingReservation.php' class='w3-button w3-black'>Go Back</a></div>";
+    echo "<div class='boatbusbts'><a href='form_audience.php' class='w3-button w3-black'>Go Back</a></div>";
 }
 
-if (isset($_GET['okprint'])) {
+if (isset($_GET['create'])) {
 
 date_default_timezone_set("Asia/Bangkok");
 $arrdate=getdate();
@@ -161,6 +161,6 @@ if (!fclose($fileTextFile3))
 echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
 echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
-
 include "footer.php";
 ?>
+
