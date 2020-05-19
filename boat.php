@@ -31,7 +31,8 @@ p {
 
 <body>
 <div class= "boatbusbts">
-    <h3>งานสัมนาวิชาการสุดยอดงานวิจัยดีเด่นแห่งประเทศไทย ประจำปี 2563 <br><span style="color: cadetblue">#สัมมนา มธ.63</span></h3>
+    <h3>Academic research seminar of Thailand 2020
+ <br><span style="color: cadetblue">#TUseminar2020</span></h3>
 </div>
     
 <div class="container" style="margin-top:30px">
@@ -40,7 +41,7 @@ p {
       <h4>Google MAP</h4>
       <div>
       <iframe src="https://www.google.com/maps/d/embed?mid=16eXedhMZ3ZmsFICGE0-as9evLhmgcY6X" width="250" height="250"></iframe></div>
-      <h3 style="color: crimson">เดินทางโดย</h3>
+      <h3 style="color: crimson">How to get there :</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
           <a class="nav-link" href="bts.php">BTS Skytrain</a>
@@ -55,15 +56,15 @@ p {
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h3 style="text-align: center">โดยสาร เรือข้ามฝาก</h3>
+      <h3 style="text-align: center">By boat</h3>
       <div class="container">
-      <a target="_blank" href="img/boat2.jpg">
-      <img src="img/boat2.jpg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%;height:auto;">
+      <a target="_blank" href="img/thaPhraChan.jpeg">
+      <img src="img/thaPhraChan.jpeg" alt="Siam Skytrain" class="mx-auto d-block" style="width:50%;height:auto;">
     </a></div>
     <div>
-    <p>วิธีแรก นั่งรถเมล์มาแถวโรงพยาบาลศิริราช-วังหลัง แล้วนั่งเรือข้ามฟากจากฝั่งโรงพยาบาลศิริราช ที่ท่าวังหลังมายังท่าพระจันทร์</p>
+    <p>First method, take public bus transport to Siriraj hospital - Wanglang then take boat from there to Thaprachan pier.</p>
     <BR>
-    <p>วิธีที่สอง นั่งเรือด่วนเจ้าพระยา ลงที่ “ท่าพรานนก” แล้วนั่งเรือข้ามฟากจากฝั่งโรงพยาบาลศิริราช ที่ท่าวังหลังมายังท่าพระจันทร์</p>
+    <p>Second method, take the Chao Phraya express boat and stop at Prannok pier then take boat from there to Thaprachan pier.</p>
     </div>
     </div>
     </div>

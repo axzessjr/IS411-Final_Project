@@ -17,14 +17,11 @@
             </div>
           </div>
    
- <!--          <div class="carousel-item" style="background: url(img/place1.jpg);">
+<div class="carousel-item" style="background: url(img/place1.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Location</h2>
-                <p class="animated fadeInUp">หอประชุมใหญ่ของมหาวิทยาลัยธรรมศาสตร์ ท่าพระจันทร์ บรรจุผู้เข้าร่วมสัมนาได้ถึง 2,500 คน โดยแบ่งเป็นที่นั่งชั้นล่าง 1,800 ที่นั่ง และชั้นบน 700 ที่นั่ง</p>
-                <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">More details</a>
-                </div>
+                <p class="animated fadeInUp">Grand Hall, Thammasat University (Tha Prachan)</br>2,500 seating capacity suitable for medium scale events, international concerts and Academic seminar</p>
               </div>
             </div>
           </div> 
@@ -34,13 +31,9 @@
               <div id="research" class="carousel-content">
                 <h2 class="animated fadeInDown">The best research of the year!</h2>
                 <p class="animated fadeInUp">งานวิจัยเกี่ยวกับสัญญาพาณิชย์อิเล็กทรอนิกส์ และการคุ้มครองผู้บริโภคในการทำสัญญาพาณิชย์อิเล็กทรอนิกส์ โดยศูนย์กฎหมายเทคโนโลยีสารสนเทศและการสื่อสาร<br><br><img src="img/research1.jpg" alt="research1" width= 20% height= 20%>&nbsp<img src="img/research2.jpg" alt="research2" width= 20% height= 20%></p>
-                <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">More details</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Other research</a>
-                </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <div class="carousel-item active" style="background: url(img/register.jpg);">
             <div class="carousel-container">
@@ -80,17 +73,17 @@
               <div class="section-title">
                 <h2>General <span>Information</span></h2>
               </div>
-              <p>Conference Name: งานสัมนาวิชาการสุดยอดงานวิจัยดีเด่นแห่งประเทศไทย<br>
-                 Conference Theme: งานวิจัยดีเด่น<br>
-                 Conference Dates: 10.00-16.00 น. 10 ตุลาคม 2563<br>
-                 Conference Location: หอประชุมใหญ่ของมหาวิทยาลัยธรรมศาสตร์ ท่าพระจันทร์<br>
-                 Hosted by: กระทรวงศึกษาธิการ<br>
-                 Language: ภาษาไทย<br>
-                 Registration Fee Per Person: 2000 บาท<br>
+              <p>Seminar Name: Academic seminar, outstanding research of Thailand<br>
+                 Seminar Theme: outstanding research<br>
+                 Seminar Dates: October 10,2020 at 10.00 a.m.-16.00 p.m. <br>
+                 Seminar Location: Grand Hall, Thammasat University (Tha Prachan)<br>
+                 Hosted by: Ministry of Education (Thailand)<br>
+                 Language: Thai<br>
+                 Registration Fee Per Person: 2000 THB<br>
               </p>
               <ul>
-                <li><i class="bx bx-check-double"></i>วัตถุประสงค์ของงาน เพื่อนำเสนอความรู้ในเรื่องต่าง ๆ ที่ได้จากงานวิจัยดีเด่นที่มีคุณภาพของประเทศไทยในปีนี้ ให้แก่ผู้ที่สนใจเข้าร่วมสัมมนา</li>
-                <li><i class="bx bx-check-double"></i>สมัครเข้าร่วมงานสัมนาวันนี้ได้ในราคาพิเศษจาก 2000 บาทเหลือเพียง<strong> 1499 </strong>บาท</li>
+                <li><i class="bx bx-check-double"></i><strong>Seminar Objective: </strong>to provide participants the knowledge and develop into the participants critical and analytical thinking skills.</li>
+                <li><i class="bx bx-check-double"></i>Register today for getting a discount from 2,000 THB with special price <strong> 1,500 </strong>THB</li>
               </ul>
             </div>
           </div>
@@ -175,7 +168,6 @@
       <div class="container-fluid">
         <div class="section-title">
           <h2>Seminar <span>Gallery</span></h2>
-          <p>รวมภาพบรรยากาศงานสัมมนาต่างๆที่ผ่านมา</p>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-4">

@@ -1,5 +1,50 @@
+<head>
+    <title>booking</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
 <?php
-include "../connectdb.php";
+session_start();
+    if (!isset($_SESSION['email'])) {
+        $_SESSION['msg'] = "You must log in first";
+        header('location: login.php');
+    }
+
+include "header.php";
+
+if (isset($_GET['oksearch'])) { 
+	$audiencetype=$_GET["audience"];
+    include "connectdb.php";
+    echo "<div class = 'boatbusbts'>";
+    echo "<h3>Audience Details</h3>";
+    echo "<table border=1>";
+    echo "<tr>
+        <td><b> user_id </b></td>
+        <td><b> firstname <b></td>
+        <td><b> lastname <b></td>
+        <td><b> institute <b></td>
+        </tr>"; 
+    $SQL = "SELECT * FROM user,register WHERE user.user_id = register.user_id AND attendance_type = 'audience' AND register_type ='$audiencetype'"; 
+    $dbRecords = mysqli_query($connect,$SQL);
+    $numrows = mysqli_num_rows($dbRecords);
+    for ($i=0; $i < $numrows; $i++) { 
+    $arrRecord = mysqli_fetch_array($dbRecords);
+    echo "<tr>
+    <td> $arrRecord[user_id] </td>
+    <td> $arrRecord[firstname] </td>
+    <td> $arrRecord[lastname] </td>
+    <td> $arrRecord[institute] </td>
+    </tr>";
+    echo "</tr>";
+    }
+    echo "</table>";
+    echo "Number of Audience : ". $numrows;
+    echo "</div>";
+    echo "<div class='boatbusbts'><a href='form_BookingReservation.php' class='w3-button w3-black'>Go Back</a></div>";
+}
+
+if (isset($_GET['okprint'])) {
 
 date_default_timezone_set("Asia/Bangkok");
 $arrdate=getdate();
@@ -7,10 +52,10 @@ $day=$arrdate["mday"];
 $month=$arrdate["month"];
 $year=$arrdate["year"];
 
-if (!file_exists("../report/audience1.csv"))
-    $fileTextFile1 = fopen ("../report/audience1.csv",'w');
+if (!file_exists("report/audience1.csv"))
+    $fileTextFile1 = fopen ("report/audience1.csv",'w');
 else
-    $fileTextFile1 = fopen ("../report/audience1.csv",'a');
+    $fileTextFile1 = fopen ("report/audience1.csv",'a');
 
 fwrite($fileTextFile1,"Audience\r\n");
 fwrite($fileTextFile1,"Register Type: Early bird with workshops\r\n");
@@ -43,10 +88,10 @@ if (!fclose($fileTextFile1))
     echo "<p>Error closing file!</p>";
 
 
-if (!file_exists("../report/audience2.csv"))
-    $fileTextFile2 = fopen ("../report/audience2.csv",'w');
+if (!file_exists("report/audience2.csv"))
+    $fileTextFile2 = fopen ("report/audience2.csv",'w');
 else
-    $fileTextFile2 = fopen ("../report/audience2.csv",'a');
+    $fileTextFile2 = fopen ("report/audience2.csv",'a');
 
 fwrite($fileTextFile2,"Audience\r\n");
 fwrite($fileTextFile2,"Register Type: Early bird without workshops\r\n");
@@ -79,10 +124,10 @@ if (!fclose($fileTextFile2))
     echo "<p>Error closing file!</p>";    
 
 
-if (!file_exists("../report/audience3.csv"))
-    $fileTextFile3 = fopen ("../report/audience3.csv",'w');
+if (!file_exists("report/audience3.csv"))
+    $fileTextFile3 = fopen ("report/audience3.csv",'w');
 else
-    $fileTextFile3 = fopen ("../report/audience3.csv",'a');
+    $fileTextFile3 = fopen ("report/audience3.csv",'a');
 
 fwrite($fileTextFile3,"Audience\r\n");
 fwrite($fileTextFile3,"Register Type: Standard with workshops\r\n");
@@ -113,5 +158,9 @@ fwrite($fileTextFile3, "\r\n");
 
 if (!fclose($fileTextFile3))
     echo "<p>Error closing file!</p>";    
- 
+echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
+echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
+}
+
+include "footer.php";
 ?>
