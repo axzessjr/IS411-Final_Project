@@ -43,7 +43,7 @@ if (isset($_GET['oksearch'])) {
     echo "</tr>";
 
     }
-    echo "</table>";
+    echo "</table><br>";
     echo "Number of Reservations : ". $numrows;
     echo "</div>";
     echo "<div class='boatbusbts'><a href='form_BookingReservation.php' class='w3-button w3-black'>Go Back</a></div>";

@@ -44,15 +44,15 @@ th, td{
 <TABLE>
 <TR>
 	<TD>First Name</TD>
-	<TD><INPUT TYPE="text" NAME="fname2" VALUE="<?=$_GET[fname];?>" class="form-control"></TD>
+	<TD><INPUT TYPE="text" NAME="fname2" VALUE="<?=$_SESSION['firstname']?>" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Last Name</TD>
-	<TD><INPUT TYPE="text" NAME="lname2" VALUE="<?=$_GET[lname];?>" class="form-control"></TD>
+	<TD><INPUT TYPE="text" NAME="lname2" VALUE="<?=$_SESSION['lastname']?>" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Institute</TD>
-	<TD><INPUT TYPE="text" NAME="ins2" VALUE="<?=$_GET[ins2];?>" class="form-control"></TD>
+	<TD><INPUT TYPE="text" NAME="ins2" VALUE="<?=$_SESSION['institute']?>" class="form-control"></TD>
 </TR>
 <TR>
 	<TD>Email</TD>
@@ -60,11 +60,7 @@ th, td{
 </TR>
 <TR>
 	<TD>Password</TD>
-	<TD><INPUT TYPE="password" NAME="pw2" class="form-control"></TD>
-</TR>
-<TR>
-	<TD>Repassword</TD>
-	<TD><INPUT TYPE="password" NAME="repw2" class="form-control"></TD>
+	<TD><INPUT TYPE="password" NAME="repw2" VALUE="<?=$_SESSION['password']?>" class="form-control"></TD>
 </TR>
 </TABLE> 
 <BR>

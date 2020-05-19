@@ -10,7 +10,7 @@
     
     
     
-        <h3>View Research :</h3> <hr>
+        <h3>Approve/Reject Research :</h3> <hr>
     
         <table>
                             <tr>

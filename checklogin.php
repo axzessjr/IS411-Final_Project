@@ -27,6 +27,7 @@
             
             
               $_SESSION['email'] = $email;
+              $_SESSION['password']  = $_POST['password'];
             
               while ($arrRecords = mysqli_fetch_array($check)) {
 

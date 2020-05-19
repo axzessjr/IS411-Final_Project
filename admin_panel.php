@@ -147,6 +147,12 @@
                 
                     $page = "researcher.php";
             
+            } 
+    
+            if(isset($_GET['booking']) || isset($_GET['search'])){ 
+                
+                    $page = "form_BookingReservation.php";
+            
             }
             
         
