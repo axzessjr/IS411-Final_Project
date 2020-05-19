@@ -11,15 +11,11 @@
         $firstname = mysqli_real_escape_string($connect, $_POST['fname2']);
         $lastname = mysqli_real_escape_string($connect, $_POST['lname2']);
         $institute = mysqli_real_escape_string($connect, $_POST['ins2']);
-        $password_1 = mysqli_real_escape_string($connect, $_POST['pw2']);
-        $repassword = mysqli_real_escape_string($connect, $_POST['repw2']);
+        $password_1 = mysqli_real_escape_string($connect, $_POST['repw2']);
+    
         $staff = 0;
 
-        //check match password;
-        if ($password_1 != $repassword) {
-            array_push($errors, "Password not match!");
-        }
-
+    
         $user_query = "SELECT * FROM user WHERE email = '$email' ";
         $dbUser = mysqli_query($connect, $user_query);
         $arrUser = mysqli_fetch_assoc($dbUser);
