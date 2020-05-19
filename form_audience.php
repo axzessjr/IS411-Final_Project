@@ -13,7 +13,7 @@
 
     <SELECT NAME="type">
 		<OPTION VALUE="t1" >Early bird with workshops</OPTION>
-        <OPTION VALUE="t2">Early bird with workshops</OPTION>
+        <OPTION VALUE="t2">Early bird without workshops</OPTION>
 		<OPTION VALUE="t3" >Standard with workshops</OPTION>
     </SELECT>
 <br><br>
