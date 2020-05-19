@@ -1,5 +1,5 @@
 <head>
-    <title>audience</title>
+    <title>booking</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,7 +14,13 @@ session_start();
 include "header.php";
 
 if (isset($_GET['oksearch'])) { 
-	$audiencetype=$_GET["audience"];
+	$audiencetype=$_GET["type"];
+    if ($audiencetype == "t1")
+        $audience="Early bird with workshops";
+    elseif ($audiencetype == "t2")
+        $audience="Early bird without workshops";
+    else
+        $audience="Standard with workshops";
     include "connectdb.php";
     echo "<div class = 'boatbusbts'>";
     echo "<h3>Audience Details</h3>";
@@ -25,7 +31,7 @@ if (isset($_GET['oksearch'])) {
         <td><b> lastname <b></td>
         <td><b> institute <b></td>
         </tr>"; 
-    $SQL = "SELECT * FROM user,register WHERE user.user_id = register.user_id AND attendance_type = 'audience' AND register_type ='$audiencetype'"; 
+    $SQL = "SELECT * FROM user,register WHERE user.user_id = register.user_id AND attendance_type = 'audience' AND register_type ='$audience'"; 
     $dbRecords = mysqli_query($connect,$SQL);
     $numrows = mysqli_num_rows($dbRecords);
     for ($i=0; $i < $numrows; $i++) { 
@@ -163,4 +169,5 @@ echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go 
 }
 include "footer.php";
 ?>
+
 
