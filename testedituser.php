@@ -33,10 +33,12 @@
             mysqli_query($connect, $user)
 				or die("Ploblem reading table: ". mysqli_error($connect));
 
-            header('location: index.php');
+            echo "<script> location.href = 'editacount.php'; </script>";
+        
         }else {
             $_SESSION['error'] = $errors;
-            header("location: editaccount.php");
+            
+            echo "<script> location.href = 'testedituser.php'; </script>";
         }
     }
 
