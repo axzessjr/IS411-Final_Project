@@ -93,7 +93,7 @@ if (isset($_GET['oksubmit'])) {
         echo "</br></br></br></br><div class='alert alert-danger center'><strong><h3>Warning! </h3></strong>Are you sure you do not want to save any name tag files?</div></br>";
     }
     else
-    echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
+    echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in folder 'report'</div></br>";
     echo "<div class='boatbusbts'><a href='admin_panel.php' class='w3-button w3-black'>Go Back</a>  <a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
 
