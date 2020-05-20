@@ -165,7 +165,7 @@ echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go 
     ?>
 
 <div class="login-form">
-<FORM action='admin_panel.php'>
+<FORM action='audience.php'>
 <B>Choose Audience Type :</B><HR>
 
     <SELECT NAME="type">
