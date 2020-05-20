@@ -2,7 +2,7 @@
 
 <?php
   
-
+  include "header.php";
     include "connectdb.php";
     echo "<div class = 'boatbusbts'>";
     echo "<h3>Researcher Details :</h3>";
@@ -31,7 +31,7 @@
     echo "</div>";
 
 ?>
-<form class="login-form">
+<form class="login-form" action="researcher.php">
   <B>Create Researcher Report :</B>
  <INPUT TYPE="submit" NAME="create" value ="Create">
 </form>
@@ -79,6 +79,6 @@ if (!fclose($fileTextFile1))
 echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
 echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
-
+include "footer.php";
 ?>
 
