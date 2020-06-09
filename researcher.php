@@ -76,7 +76,7 @@ fwrite($fileTextFile1, "\r\n");
 
 if (!fclose($fileTextFile1))
     echo "<p>Error closing file!</p>";
-echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in floder 'report'</div></br>";
+echo "</br></br></br></br><div class='alert alert-success center'><strong><h3>Awesome! </h3></strong>This file is saved in folder 'report'</div></br>";
 echo "<div class='boatbusbts'><a href='index.php' class='w3-button w3-black'>Go to Homepage</a></div>";
 }
 include "footer.php";
