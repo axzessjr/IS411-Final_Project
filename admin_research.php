@@ -38,7 +38,7 @@
                                             <td><a href='$arrRecords[file_path]'>$arrRecords[file_path]</a></td>
                                             <td>$arrRecords[upload_date]</td>
                                             <td>\"$arrRecords[status]\"</td>
-                                            <td><button type='submit' name='approve$arrRecords[research_id]' class='btn btn-success'>Approve</button></td>
+                                            <td><button type='submit' name='approve$arrRecords[research_id]' style='backgroun-color' class='btn btn-success'>Approve</button></td>
                                             <td><button type='submit' name='reject$arrRecords[research_id]' class='btn btn-danger'>Reject</button></td>
                                         </tr>
                                 
